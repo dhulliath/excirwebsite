@@ -1,3 +1,5 @@
 {
-	company_name: 'something'
+	site: {
+		'title': 'Excir Works'
+	}
 }
