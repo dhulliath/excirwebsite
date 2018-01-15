@@ -1,0 +1,14 @@
+{
+	"name": "excir_website",
+	"version": "1.0.0",
+	"description": "",
+	"main": "assets/vendor/enduro/index.js",
+	"scripts": {
+		"start": "node_modules/.bin/enduro start"
+	},
+	"author": "Peter Olejniczak",
+	"license": "Private",
+	"dependencies": {
+		"enduro": "1.4.42"
+	}
+}
