@@ -1,24 +1,20 @@
 {
 	_page: {
-		title: '',
+		title: 'Blog',
 		styling: {
 			theme: '@@global.styling.page_styles.standard'
 		},
 		nav: {
-			label: 'Landing',
+			label: 'Blog',
 			location: '@@global._navigation.navgroupitems.none',
-			weight: 1,
+			weight: '99',
 			$label_size: 6,
 			$location_size: 6,
-			$weight_size: 6,
-			$weight_type: ''
+			$weight_size: 6
 		},
 		$title_size: 12,
 		$styling_size: 4,
 		$nav_size: 8
 	},
-	$_page_expander: true,
-	$content_width: 12,
-	$content_templatitator: '@@global.contentmaker',
-	content: []
+	$_page_expander: true
 }

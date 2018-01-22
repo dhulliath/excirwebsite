@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{global.site.title}}</title>
-		<link rel="stylesheet" href="/assets/css/main.css">
-	</head>
-	<body>
-        <article>
-{{>@partial-block}}
-        </article>
-	</body>
-    <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
+
+<head>
+	<title>{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}</title>
+	{{#each _page.styling.theme.stylesheets}}
+	<link rel="stylesheet" href="{{src}}"> {{/each}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="excirLogo">
+        <img src="{{global.site.image.src}}" width="100%">
+    </div>
+    <main>
+	<nav>
+        <div>
+        <label for="drop" class="toggle">&#9776; Menu </label>
+	    <input type="checkbox" id="drop" />
+		{{#navlist 'main'}}
+        <ul class="menu">
+			{{#each this}}
+            <li>
+                {{#if subgroup}}<label for="drop-{{subgroup}}" class="toggle">{{label}} +</label>{{/if}}
+                <a href="{{#if fullpath}}{{fullpath}}{{else}}javascript:void(){{/if}}">{{label}}</a>
+                {{#if subgroup}}
+                <input type="checkbox" id="drop-{{subgroup}}" />
+                {{#navlist subgroup}}
+                <ul class="hidden">
+                    {{#each this}}
+                    <li>
+                        <a href="{{fullpath}}">{{label}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+                {{/navlist}}
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+		{{/navlist}}
+        </div>
+	</nav>
+	<article>
+        <header>
+        {{#if _page.title}}
+        <div class="lineAround">
+            {{_page.title}}
+        </div>
+        {{/if}}
+    </header>
+		{{>@partial-block}} {{>_sections}}
+	</article>
+    </main>
+</body>
+<script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
+
 </html>

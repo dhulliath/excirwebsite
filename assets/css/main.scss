@@ -1,6 +1,49 @@
-p {
-	text-align: center;
-	font-size: 100px;
-	line-height: 30px;
-	color: #c188cf;
+$view-tablet-threshold: 900px;
+$view-mobile-threshold: 600px;
+$color-text: lightgrey;
+$color-background: black;
+$color-accent: maroon;
+$color-trim: gold;
+$color-step: 10%;
+$nav-item-width: 140px;
+$nav-item-height: 40px;
+$nav-border-radius: 5px;
+@import 'modules/mediaqueries';
+@import 'modules/typing';
+@import 'modules/effects';
+
+@import 'modules/navigation_main';
+
+@import 'pages/*';
+/*
+* {
+	outline: 1px solid lightgreen;
+}*/
+
+body {
+	background: linear-gradient($color-background, $color-accent);
+	height: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: $color-text;
+}
+
+main {
+	max-width: $view-tablet-threshold;
+	margin: auto;
+}
+
+.excirLogo {
+	margin: auto;
+	max-width: $view-tablet-threshold;
+}
+
+
+
+
+article {
+	margin: auto;
+	padding-top: #{$nav-item-height};
+	width: 100%;
+	max-width: $view-tablet-threshold;
 }

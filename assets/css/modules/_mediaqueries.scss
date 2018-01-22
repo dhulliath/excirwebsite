@@ -1,0 +1,17 @@
+@mixin viewTablet() {
+    @media screen and (max-width: $view-tablet-threshold) {
+        @content;
+    }
+}
+
+@mixin viewPhone() {
+    @media screen and (max-width: $view-mobile-threshold) {
+        @content;
+    }
+}
+
+@mixin viewPrinter() {
+    @media print {
+        @content;
+    }
+}

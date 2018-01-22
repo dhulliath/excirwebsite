@@ -1,0 +1,31 @@
+.team {
+    &.member {
+        &:nth-child(2n) {
+            padding-left: 10px;
+        }
+        @include viewPhone() {
+            width: 100%;
+            float: none;
+        }
+        width: 45%;
+        float: left;
+        margin-bottom: 2em;
+        text-align: center;
+        .picture {
+            img {
+                border-radius: 10px;
+                border: solid 1px $color-background;
+                width: 75%;
+            }
+        }
+        .name {
+            
+            font-weight: bold;
+            font-size: 1.25em;
+            
+        }
+        .bio {
+            text-align: left;
+        }
+    }
+}
