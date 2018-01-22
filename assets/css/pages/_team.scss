@@ -7,22 +7,41 @@
             width: 100%;
             float: none;
         }
-        width: 45%;
-        float: left;
+        position: relative;
+        width: 100%;
         margin-bottom: 2em;
         text-align: center;
+        &:nth-child(2n + 1) {
+            .picture {
+                float: right;
+            }
+            .title {
+                text-align: right;
+            }
+        }
+        &:nth-child(2n) {
+            .picture {
+                float: left;
+            }
+            .title {
+                text-align: left;
+            }
+        }
         .picture {
             img {
                 border-radius: 10px;
                 border: solid 1px $color-background;
                 width: 75%;
+                max-width: $view-mobile-threshold;
             }
         }
         .name {
-            
             font-weight: bold;
             font-size: 1.25em;
-            
+        }
+        .title {
+            font-size: 1.05em;
+            font-weight: bold;
         }
         .bio {
             text-align: left;
