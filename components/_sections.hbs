@@ -3,5 +3,9 @@
 {{#if markdown}}
 {{{marked text}}}
 {{/if}}
+
+{{#if embed_video}}
+{{{service.pre}}}{{url}}{{{service.post}}}
+{{/if}}
 </div>
 {{/each}}

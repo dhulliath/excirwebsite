@@ -18,7 +18,14 @@
 		$nav_size: 8
 	},
 	$_page_expander: true,
-	$content_width: 12,
-	$content_templatitator: '@@global.contentmaker',
-	content: []
+	_content: [
+		{
+			$embed_video_type: 'title',
+			embed_video: 'Embedded Video',
+			service: '@@global._contenttemplates.video_embed.youtube',
+			url: 'https://www.youtube.com/embed/1yqVD0swvWU'
+		}
+	],
+	$_content_size: 12,
+	$_content_templatitator: '@@global.contentmaker'
 }

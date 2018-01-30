@@ -1,7 +1,7 @@
 {
 	site: {
 		title: 'Excir Works',
-		image: '@@global._hidden.logo_images.vector'
+		image: '@@global._hidden.logo_images.original'
 	},
 	$_hidden_hidden: true,
 	_hidden: {
