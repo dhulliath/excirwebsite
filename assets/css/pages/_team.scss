@@ -11,7 +11,8 @@
         width: 100%;
         margin-bottom: 2em;
         text-align: center;
-        &:nth-child(2n + 1) {
+        clear: both;
+        &:nth-child(2n) {
             .picture {
                 float: right;
                 @include viewPhone() {
@@ -26,7 +27,7 @@
                 }
             }
         }
-        &:nth-child(2n) {
+        &:nth-child(2n+1) {
             .picture {
                 float: left;
                 @include viewPhone() {
@@ -46,7 +47,8 @@
                 border-radius: 10px;
                 border: solid 1px $color-background;
                 width: 75%;
-                max-width: $view-mobile-threshold;
+                max-width: 250px;
+                max-height: 250px;
             }
         }
         .name {
