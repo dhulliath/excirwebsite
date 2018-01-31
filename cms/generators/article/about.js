@@ -22,12 +22,6 @@
 			embed_video: 'Embedded Video',
 			service: '@@global._contenttemplates.video_embed.youtube',
 			url: 'https://www.youtube.com/embed/1yqVD0swvWU'
-		},
-		{
-			$markdown_type: 'title',
-			markdown: 'Text with Markdown Filter',
-			$text_type: 'textarea',
-			text: 'fnfklfjkldfslkjfsdklfsd'
 		}
 	],
 	$_page_expander: true,
