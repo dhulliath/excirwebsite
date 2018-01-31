@@ -17,14 +17,28 @@ $nav-border-radius: 5px;
 
 @import 'pages/*';
 
-body.debug * {
-	outline: 1px solid rgba(lightgreen, 0.25);
+* {
 	box-sizing: border-box;
+}
+
+body.debug {
+	* {
+		outline: 1px solid rgba($color-accent, 0.25);
+	}
+	div.debugbutton {
+		color: $color-background;
+		background-color: $color-accent;
+	}
+	
 }
 div.debugbutton {
 	position: fixed;
 	top: 0;
 	left: 0;
+	user-select: none;
+	color: $color-accent;
+	font-weight: 900;
+	background-color: $color-background;
 }
 
 a {
