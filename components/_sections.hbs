@@ -1,11 +1,14 @@
 {{#each _content}}
-<div>
 {{#if markdown}}
+<div>
 {{{marked text}}}
+</div>
 {{/if}}
 
 {{#if embed_video}}
+<div class="embed youtube">
 {{{service.pre}}}{{url}}{{{service.post}}}
-{{/if}}
 </div>
+{{/if}}
+
 {{/each}}

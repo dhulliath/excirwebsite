@@ -1,0 +1,9 @@
+.embed {
+    width: 854px;
+    height: 480px;
+    margin: auto;
+    @include viewTablet() {
+        width: 95vw;
+        height: 53.4375vw;
+    }
+}

@@ -2,7 +2,7 @@
     _contenttemplates: {
         video_embed: {
             youtube: {
-                pre: '<iframe width="560" height="315" src="',
+                pre: '<iframe width="100%" height="100%" src="',
                 post: '?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
             }
         }

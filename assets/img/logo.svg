@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.887 49">
   <defs>
     <linearGradient id="treeGradient" x1="100%" y1="100%">
-      <stop offset="0%" stop-color="red">
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="orange;red;orange" />
+      <stop offset="0%" stop-color="orange">
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="orange;gold;orange" />
       </stop>
-      <stop offset="100%" stop-color="maroon">
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="crimson;maroon;crimson" />
+      <stop offset="100%" stop-color="crimson">
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="crimson;gold;crimson" />
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
       </stop>
@@ -21,19 +21,19 @@
       </stop>
     </linearGradient>
     <linearGradient id="braceLeftGradient" x1="0%" y1="0%">
-      <stop offset="0%" stop-color="red">
+      <stop offset="0%" stop-color="gold">
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0;0.20;0.40;0.60;0.80;0.95;0.80;0.60;0.40;0.20;0"
         />
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="red;maroon;red" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="gold;red;gold" />
       </stop>
       <stop offset="100%" stop-color="darkorange" />
     </linearGradient>
     <linearGradient id="braceRightGradient" x1="0%" y1="0%">
       <stop offset="0%" stop-color="darkorange" />
-      <stop offset="100%" stop-color="red">
+      <stop offset="100%" stop-color="gold">
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="red;maroon;red" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="gold;red;gold" />
       </stop>
     </linearGradient>
     <radialGradient id="goldStroke">
