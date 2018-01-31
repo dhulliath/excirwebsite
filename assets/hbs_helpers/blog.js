@@ -36,20 +36,20 @@ enduro.templating_engine.registerHelper('blog', function (options) {
         })
         .then(() => {
             // show only published entries
-            blog_entries = blog_entries.filter(entry => entry.content.publication.published)
+            blog_entries = blog_entries.filter(entry => entry.content._blog.publishing.published)
 
             // sort dates by time and limit them
             blog_entries.sort((a, b) => {
-                return new Date(a.content.publication.date) < new Date(b.content.publication.date)
+                return new Date(a.content._blog.publishing.date) < new Date(b.content._blog.publishing.date)
             })
             // add more pages with blog entries (for pagination purposes)
             for (let i = max_posts, l = blog_entries.length; i < l; i += max_posts) {
                 let context = {
-                    page_name: '/blog/page/' + (i / max_posts + 1),
+                    page_name: '/blogs/page/' + (i / max_posts + 1),
                     entries: blog_entries.slice(i, i + max_posts),
                     first: false,
                     last: blog_entries.length - i <= max_posts,
-                    next_page: '/blog/page/' + (i / max_posts + 2) + '/',
+                    next_page: '/blogs/page/' + (i / max_posts + 2) + '/',
                     prev_page: i === max_posts? '/blog/' : ('/blog/page/' + (i / max_posts) + '/')
                 }
                 // copy index page params to other pages
@@ -59,7 +59,7 @@ enduro.templating_engine.registerHelper('blog', function (options) {
                 // still replace copied pagename with appropriate one
                 context._meta.pagename = context.page_name
                 // drop `index.html` files in `page-N` folders so they can be served as static
-                enduro.api.temper.render('blog_nohelpers', context)
+                enduro.api.temper.render('blogs_nohelpers', context)
                 .then(data => {
                     let folder = path.join(enduro.project_path, enduro.config.build_folder, context.page_name, 'index.html')
                     flat_helpers.ensure_directory_existence(folder)
@@ -81,7 +81,7 @@ enduro.templating_engine.registerHelper('blog', function (options) {
                 entries: blog_entries.slice(0, max_posts),
                 first: true,
                 last: blog_entries.length <= max_posts,
-                next_page: '/blog/page/2/',
+                next_page: '/blogs/page/2/',
             }
             // copy index page params to blog context for pagination
             for (let i in options.data.root) {

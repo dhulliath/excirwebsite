@@ -2,9 +2,14 @@
 <html>
 
 <head>
-	<title>{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}</title>
-	{{#each _page.styling.theme.stylesheets}}
-	<link rel="stylesheet" href="{{src}}"> {{/each}}
+    <title>{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}</title>
+    {{#if _page.styling.theme.stylesheets}}
+    {{#each _page.styling.theme.stylesheets}}
+    <link rel="stylesheet" href="{{src}}"> {{/each}}
+    {{else}}
+    {{#each global.styling.page_styles.standard.stylesheets}}
+    <link rel="stylesheet" href="{{src}}"> {{/each}}
+    {{/if}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -13,44 +18,50 @@
         <img src="{{global.site.image.src}}" width="100%">
     </div>
     <main>
-	<nav>
-        <div>
-        <label for="drop" class="toggle">&#9776; Menu </label>
-	    <input type="checkbox" id="drop" />
-		{{#navlist 'main'}}
-        <ul class="menu">
-			{{#each this}}
-            <li>
-                {{#if subgroup}}<label for="drop-{{subgroup}}" class="toggle">{{label}} +</label>{{/if}}
-                <a href="{{#if fullpath}}{{fullpath}}{{else}}javascript:void(){{/if}}">{{label}}</a>
-                {{#if subgroup}}
-                <input type="checkbox" id="drop-{{subgroup}}" />
-                {{#navlist subgroup}}
-                <ul class="hidden">
+        <nav>
+            <div>
+                <label for="drop" class="toggle">&#9776; Menu </label>
+                <input type="checkbox" id="drop" /> {{#navlist 'main'}}
+                <ul class="menu">
                     {{#each this}}
                     <li>
-                        <a href="{{fullpath}}">{{label}}</a>
+                        {{#if subgroup}}<label for="drop-{{subgroup}}" class="toggle">{{label}} +</label>{{/if}}
+                        <a href="{{#if fullpath}}{{fullpath}}{{else}}javascript:void(){{/if}}">{{label}}</a> {{#if subgroup}}
+                        <input type="checkbox" id="drop-{{subgroup}}" /> {{#navlist subgroup}}
+                        <ul class="hidden">
+                            {{#each this}}
+                            <li>
+                                <a href="{{fullpath}}">{{label}}</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+                        {{/navlist}} {{/if}}
                     </li>
                     {{/each}}
                 </ul>
                 {{/navlist}}
+            </div>
+        </nav>
+        <article>
+            <header>
+                {{#if _page.title}}
+                <div class="lineAround">
+                    {{_page.title}}
+                </div>
                 {{/if}}
-            </li>
-            {{/each}}
-        </ul>
-		{{/navlist}}
-        </div>
-	</nav>
-	<article>
-        <header>
-        {{#if _page.title}}
-        <div class="lineAround">
-            {{_page.title}}
-        </div>
-        {{/if}}
-    </header>
-		{{>@partial-block}} {{>_sections}}
-	</article>
+                {{#if _blog.title}}
+                <div class="lineAround">
+                    {{_blog.title}}
+                </div>
+                {{/if}}
+            </header>
+            <section>
+                {{>@partial-block}} {{>_sections}}
+            </section>
+            <footer>
+                {{{marked global.site.footer}}}
+            </footer>
+        </article>
     </main>
 </body>
 <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>

@@ -20,10 +20,10 @@
 	$_page_expander: true,
 	_content: [
 		{
-			$embed_video_type: 'title',
-			embed_video: 'Embedded Video',
-			service: '@@global._contenttemplates.video_embed.youtube',
-			url: 'https://www.youtube.com/embed/1yqVD0swvWU'
+			$markdown_type: 'title',
+			markdown: 'Text with Markdown Filter',
+			$text_type: 'textarea',
+			text: 'Excir Works Corp. recovers valuable metals from e-waste and spent catalysts using its proprietary breakthrough technology. Excir’s unique process delivers the final products in highly pure forms (> 99.99%), excluding precious metal products from refining processes. The company aims to apply its unique recycling technology all over the world to become one of the leading producer of precious metals.'
 		}
 	],
 	$_content_size: 12,

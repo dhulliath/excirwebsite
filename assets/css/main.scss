@@ -2,7 +2,7 @@ $view-tablet-threshold: 900px;
 $view-mobile-threshold: 600px;
 $color-text: lightgrey;
 $color-background: black;
-$color-accent: maroon;
+$color-accent: orange;
 $color-trim: gold;
 $color-step: 10%;
 $nav-item-width: 140px;
@@ -20,6 +20,13 @@ $nav-border-radius: 5px;
 * {
 	outline: 1px solid lightgreen;
 }*/
+
+a {
+	color: $color-text;
+	&:hover, &:active {
+		color: lighten($color-text, 20%);
+	}
+}
 
 body {
 	background: linear-gradient($color-background, $color-accent);

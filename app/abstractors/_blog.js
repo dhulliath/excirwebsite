@@ -14,13 +14,20 @@ abstractor.prototype.abstract = function (context) {
             publishing: {
                 date: '',
                 published: false
+            },
+            stub: {
+                teaser: ''
             }
         }
         var overrideContext = {
             publishing: {
                 $date_type: 'date'
             },
-            $publishing_size: 6
+            stub: {
+                $teaser_type: 'textarea',
+            },
+            $publishing_size: 4,
+            $stub_size: 8
         }
 
         var contextData = deepmerge.all([defaultContext, context._blog, overrideContext])
