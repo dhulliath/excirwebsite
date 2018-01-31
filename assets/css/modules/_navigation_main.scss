@@ -161,10 +161,10 @@ li > a:only-child:after { content: ''; }
 	nav ul ul a {
 		padding: 0 40px;
         &:before {
-            content: '';
-            border-left: 5px solid $color-nav-highlight;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
+            content: '\2015\00a0';
+            //border-left: 5px solid $color-nav-highlight;
+            //border-top: 5px solid transparent;
+            //border-bottom: 5px solid transparent;
             width:0; height:0;
         }
 	}
