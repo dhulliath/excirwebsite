@@ -17,9 +17,14 @@ $nav-border-radius: 5px;
 
 @import 'pages/*';
 
-* {
+body.debug * {
 	outline: 1px solid rgba(lightgreen, 0.25);
 	box-sizing: border-box;
+}
+div.debugbutton {
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 a {
@@ -51,6 +56,10 @@ header {
 	max-width: $view-tablet-threshold;
 }
 
+footer {
+	clear: both;
+	margin-top: 150px;
+}
 
 
 

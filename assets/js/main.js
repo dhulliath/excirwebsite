@@ -9,6 +9,9 @@ require.config({
 require(['jquery'], function ($) {
 	$(document).ready(function () {
 		console.log('requirejs ready to use')
+		$('.debugbutton').click(function() {
+			$('body').toggleClass('debug')
+		})
 	})
 	$('nav a.icon').click(function () {
 		$('nav').toggleClass('responsive');
