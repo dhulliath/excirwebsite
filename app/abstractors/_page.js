@@ -36,7 +36,7 @@ abstractor.prototype.abstract = function (context) {
         //merge with existing values
         var pageData = deepmerge.all([defPage, context._page, defPageOverride])
 
-        context['$_page_expander'] = true
+        context['$_page_expander'] = false
         context._page = pageData
 
         return resolve()

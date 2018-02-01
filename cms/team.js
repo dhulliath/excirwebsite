@@ -30,6 +30,7 @@
 		}
 	},
 	$team_templatitator: '@@_templates.teamtemplate',
+	$team_size: 6,
 	team: [
 		{
 			name: 'Graham Fritz',
