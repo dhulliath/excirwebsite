@@ -4,20 +4,20 @@
       <stop offset="0%" stop-color="orange">
         <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="orange;gold;orange" />
       </stop>
-      <stop offset="100%" stop-color="darkorange">
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="darkorange;gold;darkorange" />
+      <stop offset="100%" stop-color="#ffaf1a">
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#ffaf1a;gold;#ffaf1a" />
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
       </stop>
     </linearGradient>
     <linearGradient id="leafGradient" x1="100%" y1="100%">
       <stop offset="0%" stop-color="#cc0">
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#cccc00;#00b300;#cccc00" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#cccc00;gold;#cccc00" />
       </stop>
-      <stop offset="100%" stop-color="#00b300">
+      <stop offset="100%" stop-color="gold">
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#00b300;#bbbb00;#00b300" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="gold;#bbbb00;gold" />
       </stop>
     </linearGradient>
     <linearGradient id="braceLeftGradient" x1="0%" y1="0%">
@@ -26,10 +26,10 @@
         />
         <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="gold;orange;gold" />
       </stop>
-      <stop offset="100%" stop-color="darkorange" />
+      <stop offset="100%" stop-color="#ffaf1a" />
     </linearGradient>
     <linearGradient id="braceRightGradient" x1="0%" y1="0%">
-      <stop offset="0%" stop-color="darkorange" />
+      <stop offset="0%" stop-color="#ffaf1a" />
       <stop offset="100%" stop-color="gold">
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
@@ -115,7 +115,7 @@
 
     .logoText {
       font-size: 10px;
-      font-weight: bold;
+      font-weight: normal;
       font-family: "Times New Roman", Georgia, Serif;
     }
 
