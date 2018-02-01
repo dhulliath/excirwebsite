@@ -25,5 +25,5 @@
 	$_content_size: 12,
 	$_content_templatitator: '@@global.contentmaker',
 	$_page_expander: true,
-	$_blog_expander: true
+	$_blog_expander: false
 }

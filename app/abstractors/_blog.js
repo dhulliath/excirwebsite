@@ -32,6 +32,7 @@ abstractor.prototype.abstract = function (context) {
 
         var contextData = deepmerge.all([defaultContext, context._blog, overrideContext])
         context._blog = contextData
+        context['$_blog_expander'] = false;
 
         return resolve()
     })

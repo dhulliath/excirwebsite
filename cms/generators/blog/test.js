@@ -17,13 +17,13 @@
 	_content: [
 		{
 			$markdown_type: 'title',
-            markdown: 'Text with Markdown Filter',
-            $text_type: 'textarea',
-            text: 'So this here is a blog entry. What more can I say? Blog it up homie.'
+			markdown: 'Text with Markdown Filter',
+			$text_type: 'textarea',
+			text: 'So this here is a blog entry. What more can I say? Blog it up homie.'
 		}
 	],
 	$_content_size: 12,
 	$_content_templatitator: '@@global.contentmaker',
-	$_blog_expander: true,
+	$_blog_expander: false,
 	$_page_expander: true
 }

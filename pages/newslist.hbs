@@ -1,0 +1,11 @@
+{{#>wrapper}}
+{{#news}}
+{{#each this.entries}}
+<div class="entry blog">
+    <a href="/news/{{page_slug}}"><span class="title">{{content._blog.title}}</span></a>
+    <span class="date">{{content._blog.publishing.date}}</span>
+    <span class="teaser">{{{marked content._blog.stub.teaser}}}</span>
+</div>
+{{/each}}
+{{/news}}
+{{/wrapper}}
