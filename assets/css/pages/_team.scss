@@ -32,8 +32,8 @@ $team-border-radius: 0.5em;
                 color: $color-trim;
                 position: absolute;
                 bottom: 0;
-                left: 0;
-                right: 0;
+                width: 100%;
+                line-height: 2em;
                 @extend .font-anton;
             }
         }
