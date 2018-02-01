@@ -40,35 +40,35 @@
 			$bio_type: 'textarea'
 		},
 		{
-			name: 'Hiwa Salimi',
+			name: 'Dr. Hiwa Salimi',
 			picture: '/remote/direct_uploads/1516592545_qmx8rn.jpeg',
 			$picture_type: 'image',
-			title: 'Director of Research and Development',
-			bio: 'Curabitur vitae tortor quam. Aliquam finibus semper turpis, sit amet luctus urna finibus id. In tortor felis, porta id mollis vel, volutpat nec ipsum. Donec feugiat, tellus fermentum rutrum fermentum, magna dolor faucibus enim, id consectetur metus tellus nec urna. Duis mollis scelerisque elementum. Integer sodales dignissim scelerisque. Curabitur et risus eros. In purus neque, posuere sit amet leo id, placerat rhoncus metus. Ut tellus lorem, mollis sed semper et, ullamcorper sed nulla. Donec tincidunt eleifend volutpat. Donec in enim pulvinar, auctor augue quis, interdum mauris. Praesent ullamcorper mi lectus, in elementum sapien venenatis a. Donec nisl ligula, aliquet in pulvinar quis, tristique non tortor. Maecenas sit amet blandit lectus. In vestibulum urna et eleifend efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
+			title: 'Chief Technology Officer',
+			bio: 'Mr. Salimi is one of the founders of Excir Works and an expert in the hydrometallurgy and organometallic chemistry. He earned his PhD in organometallic chemistry from the University of Saskatchewan and has over 10 years of experience in precious metals extraction and metal-ligand interactions. For the past five years, he has been focusing on developing new methods for purification and recovery of precious metals from both primary and secondary resources. Mr. Salimi holds a couple of patents in the field of purification and recovery of precious metals and has also been one of the three main inventors of the Excir process.',
 			$bio_type: 'textarea'
 		},
 		{
-			name: 'Loghman Moradi',
+			name: 'Dr. Loghman Moradi',
 			picture: '/remote/direct_uploads/1516592551_wga8c.jpeg',
 			$picture_type: 'image',
-			title: 'Director of Operation',
-			bio: 'Nulla tincidunt mi in rutrum viverra. Nam luctus, arcu ut luctus fringilla, lectus magna ultricies enim, in suscipit odio augue placerat sem. Nullam porttitor felis ut rhoncus cursus. Sed maximus scelerisque tortor. Cras nec cursus velit, at bibendum nunc. Mauris faucibus nibh et sem consequat finibus. Duis ex nisl, placerat eget sapien non, lacinia pharetra urna. Vivamus quis hendrerit dui, sed mattis mi. Donec faucibus feugiat felis, aliquam hendrerit tellus pulvinar eget. Pellentesque suscipit sed purus vitae efficitur. Donec vel libero odio. Sed maximus enim libero, sed aliquet felis placerat id.',
+			title: 'Chief Operation Officer',
+			bio: 'Mr. Moradi has 10 years + experience in the field of Hydrometallurgy and applied chemistry with the focus on designing and applying new sulphur based extractants for solvent extraction of gold and other precious metals. He has published numerous scientific papers and patents in the field of hydrometallurgy, chemistry and polymer science. He is also one of the reviewers for the journal of Industrial & Engineering Chemistry Research which is published by the American Chemical Society. Prior to joining Excir, Loghman was an assistant professor at the University of Kurdistan. Mr. Moradi earned his PhD in Organic chemistry from the Tarbiat Modares University. Loghman has been one of the inventors of the Excir technology.',
 			$bio_type: 'textarea'
 		},
 		{
-			name: 'Chris Bowman',
+			name: 'Dr. Chris Bowman',
 			picture: '/remote/direct_uploads/1516592556_g8ahk.jpeg',
 			$picture_type: 'image',
 			title: 'Business Development Officer',
-			bio: 'Etiam sit amet suscipit neque. Nam interdum vel ipsum nec pretium. Quisque quis elit sed diam rutrum consectetur. In tempus massa at lorem accumsan, vitae vehicula sapien semper. Phasellus vel auctor tortor. Sed nibh diam, efficitur at eros sit amet, bibendum feugiat lorem. Etiam quis ullamcorper lorem, a lacinia metus. Vivamus fermentum porta neque, eu lacinia sem pellentesque vel. Proin nec iaculis justo. Sed et mauris in urna fringilla convallis nec pellentesque lorem. Praesent nibh urna, eleifend eu turpis ut, hendrerit consectetur arcu. Cras ac sodales est. Sed et risus risus. Fusce lorem odio, consectetur ac iaculis nec, ultrices ut tellus. Quisque vel sem ut arcu vestibulum semper. In vitae convallis mi.',
+			bio: 'Mr. Bowman is a portfolio manager with the University of Saskatchewan, with a specialty in the transfer of University technologies in physical science and engineering to industry. He has expertise in technology evaluation, scale-up and licensing. He holds a Ph.D in applied mathematics from the University of Arizona.',
 			$bio_type: 'textarea'
 		},
 		{
-			name: 'Stephen Foley',
+			name: 'Dr. Stephen Foley',
 			picture: '/remote/direct_uploads/1516592561_bfx0rg.jpeg',
 			$picture_type: 'image',
-			title: 'To be Determinted',
-			bio: 'Curabitur ex mi, facilisis vitae ultricies nec, tempor id arcu. Aliquam in congue urna. Fusce dapibus dolor magna, quis blandit tortor porta sed. Quisque ac felis fringilla tortor mollis sodales sed vitae ligula. Nullam commodo enim in lectus ultrices, ut iaculis justo suscipit. Maecenas eleifend ornare posuere. Phasellus ac enim lectus. Proin a augue molestie, porta metus nec, sollicitudin lectus.',
+			title: 'Director',
+			bio: 'Mr. Foley is one of the co-founders of Excir Works and has more than 20 years research experience in the general field of inorganic chemistry. He has spent the last 12 years as a professor in the Department of Chemistry at the University of Saskatchewan. His recent research has focused on developing new extraction methods for recovery and purification of precious metals. Stephen was one of the inventors of the Excir technology.',
 			$bio_type: 'textarea'
 		}
 	],
