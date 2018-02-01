@@ -49,6 +49,7 @@ nav ul {
 	padding:0;
 	margin:0px auto;
 	list-style: none;
+	list-style-image: url(data:0);
 	position: relative;
 	}
 
@@ -68,7 +69,7 @@ nav a {
     transition: background-color 0.25s;
 }
 
-nav ul li ul li:hover { background: $color-nav-highlight; }
+//nav ul li ul li:hover { background: $color-nav-highlight; }
 
 nav a:hover { 
 	background-color: $color-nav-highlight; 
