@@ -1,22 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Merriweather|Montserrat');
 
-nav {
+.font-anton {
     font-family: 'Anton', sans-serif;
+}
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.font-merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+nav {
+    @extend .font-anton;
     font-size: 1.15em;
 }
 article {
-    //font-family: 'Merriweather', serif;
-    font-family: 'Montserrat', sans-serif;
+    @extend .font-montserrat;
 }
 
 header {
-    font-family: 'Merriweather', serif;
+    @extend .font-merriweather;
     font-weight: bold;
     text-align: center;
     font-size: 2.25em;
     color: $color-trim;
-}
-
-.team.member .name {
-    font-family: 'Merriweather', serif;
 }

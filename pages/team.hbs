@@ -1,13 +1,13 @@
 {{#>wrapper}}
 {{#each team}}
-<div class="team member">
-    <div class="name lineAround">{{name}}</div>
-    {{#if picture}}<div class="picture">
-        <img src="{{picture}}">
-    </div>{{/if}}
-    
-    <div class="title">{{title}}</div>
-    {{#if bio}}<div class="bio">{{bio}}</div>{{/if}}
+<div class="team member2">
+    <div class="top" {{#if picture}}style="background-image: url({{picture}});"{{/if}}>
+        <div class="name">{{name}}</div>
+    </div>
+    <div class="bottom">
+        <div class="title">{{title}}</div>
+        <div class="bio">{{{bio}}}</div>
+    </div>
 </div>
 {{/each}}
 {{/wrapper}}
