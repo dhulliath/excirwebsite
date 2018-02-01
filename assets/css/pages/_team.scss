@@ -2,12 +2,9 @@ $team-border-radius: 0.5em;
 
 .team {
     &.member2 {
-        max-width: calc(50% - 2em);
+        width: calc(50% - 2em);
         @include viewPhone() {
-            max-width: 100vw;
-        }
-        @include viewTablet() {
-            max-width: calc(50% - 2em);
+            width: calc(100% - 2em);
         }
         margin: 1em;
         float: left;
