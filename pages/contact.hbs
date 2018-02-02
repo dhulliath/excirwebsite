@@ -1,2 +1,11 @@
 {{#>wrapper}}
+<form name="emailContact" method="post" action="/api/mail">
+    <input type="text" name="getit">
+    <input id="formName" type="text" name="name" placeholder="Full Name">
+    <input id="formCompany" type="text" name="company" placeholder="Your Company" >
+    <input id="formEmail" type="email" name="replyEmail" placeholder="Your Contact Email" >
+    <input id="formPhonenumber" type="text" name="phoneNumber" placeholder="Your Phone Number" >
+    <textarea id="formMessage" name="message" placeholder="What do you think?"></textarea>
+    <input type="submit" value="Send Email!">
+</form>
 {{/wrapper}}

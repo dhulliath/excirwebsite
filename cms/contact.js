@@ -16,10 +16,12 @@
 		$styling_size: 4,
 		$nav_size: 8
 	},
-	_content: [],
 	$_page_expander: false,
-	$_content_size: 12,
-	$_content_templatitator: '@@global.contentmaker',
+	_templates: {
+		formfields: {
+			
+		}
+	},
 	contact: {
 		targetEmail: 'info@excirworks.com',
 		address: {

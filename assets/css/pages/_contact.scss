@@ -1,0 +1,41 @@
+
+$form-margins: 0.5em;
+
+[name~=getit] {
+    display: none;
+}
+
+%form-styling {
+    @extend .font-montserrat;
+    font-size: 1.1em;
+    padding: 0.5em;
+    border-radius: 8px;
+    background-color: lighten($color-background, 15%);
+    color: white;
+    border: 2px solid $color-trim;
+    margin: $form-margins;
+}
+
+form[name~=emailContact] {
+    input {
+        &[type~=text],
+        &[type~=email] {
+            width: calc(50% - #{$form-margins * 2});
+            float: left;
+            @include viewPhone() {
+                width: calc(100% - #{$form-margins * 2});
+            }
+        }
+        &[type~=text],
+        &[type~=email],
+        &[type~=submit] {
+            @extend %form-styling;
+        }
+    }
+    textarea {
+        @extend %form-styling;
+        resize: none;
+        width: calc(100% - #{$form-margins * 2});
+        height: 16em;
+    }
+}

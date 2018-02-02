@@ -12,9 +12,11 @@
   "dependencies": {
     "array-sort": "^1.0.0",
     "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
     "deepmerge": "^2.0.1",
     "enduro": "1.4.42",
     "lodash": "^4.17.4",
-    "marked": "^0.3.12"
+    "marked": "^0.3.12",
+    "nodemailer": "^4.4.2"
   }
 }
