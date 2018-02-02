@@ -5,10 +5,5 @@
 		"bucket": "enduro.sethere",
 		"region": "eu-west-1"
 	},
-	"juicebox_enabled": false,
-	"cultures": [
-		"en",
-		"zh"
-	],
 	"port": "3003"
 }
