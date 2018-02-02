@@ -17,7 +17,7 @@
 		$styling_size: 4,
 		$nav_size: 8
 	},
-	$_page_expander: true,
+	$_page_expander: false,
 	_content: [
 		{
 			$markdown_type: 'title',

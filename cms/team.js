@@ -7,7 +7,7 @@
 		nav: {
 			label: 'Executive Team',
 			location: '@@global._navigation.navgroupitems.main_company',
-			weight: '50',
+			weight: '2',
 			$label_size: 6,
 			$location_size: 6,
 			$weight_size: 6
@@ -73,5 +73,5 @@
 			$bio_type: 'textarea'
 		}
 	],
-	$_page_expander: true
+	$_page_expander: false
 }

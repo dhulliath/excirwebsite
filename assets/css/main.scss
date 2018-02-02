@@ -54,6 +54,7 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: $color-text;
+	margin: 0;
 }
 
 main {
@@ -73,6 +74,9 @@ header {
 footer {
 	clear: both;
 	margin-top: 150px;
+	@extend .font-anton;
+	color: $color-trim;
+	text-align: center;
 }
 
 

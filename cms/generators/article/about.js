@@ -7,7 +7,7 @@
 		nav: {
 			label: 'About',
 			location: '@@global._navigation.navgroupitems.main_company',
-			weight: '20',
+			weight: '1',
 			$label_size: 6,
 			$location_size: 6,
 			$weight_size: 6
@@ -24,7 +24,7 @@
 			url: 'https://www.youtube.com/embed/1yqVD0swvWU'
 		}
 	],
-	$_page_expander: true,
+	$_page_expander: false,
 	$_content_size: 12,
 	$_content_templatitator: '@@global.contentmaker'
 }

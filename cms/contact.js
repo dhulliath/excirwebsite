@@ -7,7 +7,7 @@
 		nav: {
 			label: 'Contact',
 			location: '@@global._navigation.navgroupitems.main',
-			weight: '60',
+			weight: '10',
 			$label_size: 6,
 			$location_size: 6,
 			$weight_size: 6
@@ -17,7 +17,7 @@
 		$nav_size: 8
 	},
 	_content: [],
-	$_page_expander: true,
+	$_page_expander: false,
 	$_content_size: 12,
 	$_content_templatitator: '@@global.contentmaker',
 	contact: {
