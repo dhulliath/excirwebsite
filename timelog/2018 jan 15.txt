@@ -41,6 +41,10 @@
 3 February
 1000 - start
 1100 - stop
+1230 - start
+1320 - stop
+---
+1 hour 50 minutes
 
 ===
-17 hours 15 minutes
+19 hours 5 minutes
