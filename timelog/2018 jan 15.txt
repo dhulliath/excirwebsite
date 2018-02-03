@@ -38,5 +38,9 @@
 ---
 1 hour 45 minutes
 
+3 February
+1000 - start
+1100 - stop
+
 ===
 17 hours 15 minutes
