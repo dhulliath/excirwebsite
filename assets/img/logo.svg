@@ -94,23 +94,26 @@
       animation-iteration-count: infinite
     }
 
-    .leaf:nth-child(5n) {
+    .leaf:nth-child(6n) {
       animation-duration: 5s
     }
 
-    .leaf:nth-child(5n+1) {
+    .leaf:nth-child(6n+1) {
       animation-duration: 6s
     }
 
-    .leaf:nth-child(5n+2) {
+    .leaf:nth-child(6n+2) {
       animation-duration: 7s
     }
 
-    .leaf:nth-child(5n+3) {
+    .leaf:nth-child(6n+3) {
       animation-duration: 8s
     }
-    .leaf:nth-child(5n+4) {
+    .leaf:nth-child(6n+4) {
       animation-duration: 9s
+    }
+    .leaf:nth-child(6n+5) {
+      animation-duration: 10s;
     }
 
     .logoText {
