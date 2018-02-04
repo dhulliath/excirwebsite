@@ -11,4 +11,8 @@
 </div>
 {{/if}}
 
+{{#if image}}
+<img src="{{href}}" class="{{#each style.position.classes}}{{this}} {{/each}}{{#each style.size.classes}}{{this}} {{/each}}" />
+{{/if}}
+
 {{/each}}

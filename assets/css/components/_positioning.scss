@@ -1,0 +1,39 @@
+.fl-left {
+    float:left;
+}
+.fl-right {
+    float:right;
+}
+
+.sz-quarter {
+    width: 25%;
+    @include viewPhone() {
+        width: 100%;
+    }
+}
+.sz-half {
+    width: 50%;
+    @include viewPhone() {
+        width: 100%;
+    }
+}
+.sz-fluid {
+    width: 100%;
+}
+
+.page-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}

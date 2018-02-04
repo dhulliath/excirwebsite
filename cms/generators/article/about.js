@@ -1,6 +1,6 @@
 {
 	_page: {
-		title: '',
+		title: 'About',
 		styling: {
 			theme: '@@global.styling.page_styles.standard'
 		},

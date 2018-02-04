@@ -9,8 +9,8 @@ $team-border-radius: 0.5em;
         margin: 1em;
         float: left;
         border-radius: $team-border-radius;
-        border: 1px solid lighten($color-background, 20%);
-        background: linear-gradient(135deg, lighten($color-background, 12%), lighten($color-background, 18%));
+        border: 1px solid lighten($color-background, 15%);
+        background: linear-gradient(135deg, lighten($color-background, 5%), lighten($color-background, 10%));
         .top {
             position: relative;
             max-height: 100vw;
@@ -40,8 +40,10 @@ $team-border-radius: 0.5em;
         .bottom {
             .title {
                 text-align: center;
-                text-decoration: underline;
+                //text-decoration: underline;
                 font-weight: bold;
+                font-size: 1.1em;
+                color: white;
                 margin-top: 0.5em;
                 @extend .font-montserrat;
             }

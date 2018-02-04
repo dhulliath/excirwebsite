@@ -15,6 +15,7 @@ $nav-border-radius: 5px;
 
 @import 'modules/navigation_main';
 
+@import 'components/*';
 @import 'pages/*';
 
 * {
@@ -55,6 +56,7 @@ body {
 	background-repeat: no-repeat;
 	color: $color-text;
 	margin: 0;
+	padding-top: 1.25em;
 }
 
 main {
@@ -64,11 +66,15 @@ main {
 
 header {
 	margin-bottom: 1.25em;
+	@include viewPhone() {
+		display: none;
+	}
 }
 
 .excirLogo {
 	margin: auto;
 	max-width: $view-tablet-threshold;
+	
 }
 
 footer {

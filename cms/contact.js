@@ -1,6 +1,6 @@
 {
 	_page: {
-		title: '',
+		title: 'Contact',
 		styling: {
 			theme: '@@global.styling.page_styles.standard'
 		},
@@ -18,9 +18,7 @@
 	},
 	$_page_expander: false,
 	_templates: {
-		formfields: {
-			
-		}
+		formfields: {}
 	},
 	contact: {
 		targetEmail: 'info@excirworks.com',

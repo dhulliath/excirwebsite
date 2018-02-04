@@ -1,0 +1,20 @@
+img {
+    &.size-quarter {
+        max-width:25%;
+        @include viewPhone() {
+            max-width:100%;
+        }
+    }
+    &.size-fluid {
+        width: 100%;
+    }
+
+    &.float-left {
+        float:left;
+    }
+
+    &.float-right {
+        float:right;
+    }
+
+}

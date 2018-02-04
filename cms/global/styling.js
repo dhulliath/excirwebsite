@@ -11,18 +11,65 @@
 		page_styles: {
 			landing: {
 				$stylesheets_templatitator: '@@global.styling._templates.csstemplate',
-				stylesheets: [
-					{
-						src: '/assets/css/landing.css'
-					}
-				]
+				stylesheets: [{
+					src: '/assets/css/landing.css'
+				}]
 			},
 			standard: {
 				$stylesheets_templatitator: '@@global.styling._templates.csstemplate',
-				stylesheets: [
-					{
-						src: '/assets/css/main.css'
-					}
+				stylesheets: [{
+					src: '/assets/css/main.css'
+				}]
+			}
+		},
+		position_styles: {
+			float_left: {
+				classes: [
+					'fl-left'
+				]
+			},
+			float_right: {
+				classes: [
+					'fl-right'
+				]
+			},
+			none: {
+				classes: []
+			}
+		},
+		size_styles: {
+			quarter: {
+				classes: [
+					'sz-quarter'
+				]
+			},
+			half: {
+				classes: [
+					'sz-half'
+				]
+			},
+			fluid: {
+				classes: [
+					'sz-fluid'
+				]
+			}
+		},
+		image_styles: {
+			fluid: {
+				classes: [
+					'size-fluid'
+				]
+			},
+			float_left: {
+				classes: [
+					'size-quarter',
+					'float-left'
+				]
+			},
+			float_right: {
+				classes: [
+					'size-quarter',
+					'float-right'
 				]
 			}
 		}

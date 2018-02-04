@@ -1,7 +1,6 @@
 const local_app = function () {}
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
-const axios = require('axios')
 
 local_app.prototype.transporter = null
 
@@ -20,7 +19,7 @@ local_app.prototype.init = function (app) {
 		extended: false
 	}))
 
-	app.post('/mail/send', (req, res) => {
+	app.post('/email/send/', (req, res) => {
 		let code = {
 			error: false,
 			honeypot: false
@@ -46,9 +45,9 @@ local_app.prototype.init = function (app) {
 			}
 			transporter.sendMail(mailOptions, (error, info) => {
 				if (error) {
-					res.send(error)
+					res.redirect('/email/failure/')
 				} else {
-					res.redirect('/emailsuccess/')
+					res.redirect('/email/success/')
 				}
 			})
 		}
