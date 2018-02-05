@@ -48,7 +48,9 @@
 
 4 February
 1300 - start
-
+1615 - stop
+1900 - start
+2140 - stop
 
 ===
 19 hours 5 minutes

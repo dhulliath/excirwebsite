@@ -18,6 +18,18 @@
 	},
 	_content: [
 		{
+			$image_type: 'title',
+			$href_size: 4,
+			image: 'Image with Styling',
+			$href_type: 'image',
+			href: '/assets/img/circuitgold.svg',
+			$style_size: 8,
+			style: {
+				position: '@@global.styling.position_styles.center',
+				size: '@@global.styling.size_styles.half'
+			}
+		},
+		{
 			$embed_video_type: 'title',
 			embed_video: 'Embedded Video',
 			service: '@@global._contenttemplates.video_embed.youtube',

@@ -33,6 +33,11 @@
 					'fl-right'
 				]
 			},
+			center: {
+				classes: [
+					'fl-center'
+				]
+			},
 			none: {
 				classes: []
 			}
