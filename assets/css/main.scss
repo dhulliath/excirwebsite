@@ -74,7 +74,7 @@ header {
 .excirLogo {
 	margin: auto;
 	max-width: $view-tablet-threshold;
-	
+	user-select: none;
 }
 
 footer {
@@ -83,6 +83,10 @@ footer {
 	@extend .font-anton;
 	color: $color-trim;
 	text-align: center;
+
+	img {
+		user-select: none;
+	}
 }
 
 
