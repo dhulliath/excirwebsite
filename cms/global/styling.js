@@ -11,15 +11,25 @@
 		page_styles: {
 			landing: {
 				$stylesheets_templatitator: '@@global.styling._templates.csstemplate',
-				stylesheets: [{
-					src: '/assets/css/landing.css'
-				}]
+				stylesheets: [
+					{
+						src: '/assets/css/landing.css'
+					}
+				]
 			},
 			standard: {
 				$stylesheets_templatitator: '@@global.styling._templates.csstemplate',
-				stylesheets: [{
-					src: '/assets/css/main.css'
-				}]
+				stylesheets: [
+					{
+						src: '/assets/css/main.css'
+					},
+					{
+						src: '/assets/css/photoswipe/main.css'
+					},
+					{
+						src: '/assets/css/photoswipe/default-skin/default-skin.css'
+					}
+				]
 			}
 		},
 		position_styles: {

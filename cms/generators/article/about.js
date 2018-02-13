@@ -18,34 +18,26 @@
 	},
 	_content: [
 		{
-			$image_type: 'title',
-			$href_size: 4,
-			image: 'Image with Styling',
-			$href_type: 'image',
-			href: '/assets/img/circuitgold.svg',
-			$style_size: 8,
-			style: {
-				position: '@@global.styling.position_styles.float_left',
-				size: '@@global.styling.size_styles.half'
-			}
-		},
-		{
-			$image_type: 'title',
-			$href_size: 4,
-			image: 'Image with Styling',
-			$href_type: 'image',
-			href: '/assets/img/goldbeaker.svg',
-			$style_size: 8,
-			style: {
-				position: '@@global.styling.position_styles.float_right',
-				size: '@@global.styling.size_styles.half'
-			}
-		},
-		{
-			$embed_video_type: 'title',
-			embed_video: 'Embedded Video',
-			service: '@@global._contenttemplates.video_embed.youtube',
-			url: 'https://www.youtube.com/embed/1yqVD0swvWU'
+			$gallery_type: 'title',
+			gallery: 'Image Gallery',
+			title: '',
+			$items_templatitator: '@@global._contenttemplates.gallery',
+			items: [
+				{
+					$image_type: 'title',
+					image: 'Image with Styling',
+					$href_type: 'image',
+					href: '/assets/img/goldbeaker.svg',
+					caption: 'Gold beaker animated'
+				},
+				{
+					$image_type: 'title',
+					image: 'Image with Styling',
+					$href_type: 'image',
+					href: '/assets/img/circuitgold.svg',
+					caption: 'Circuit bricks'
+				}
+			]
 		}
 	],
 	$_page_expander: false,
