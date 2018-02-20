@@ -95,25 +95,25 @@
     }
 
     .leaf:nth-child(6n) {
-      animation-duration: 5s
+      animation-duration: 0.5s
     }
 
     .leaf:nth-child(6n+1) {
-      animation-duration: 6s
+      animation-duration: 0.6s
     }
 
     .leaf:nth-child(6n+2) {
-      animation-duration: 7s
+      animation-duration: 0.7s
     }
 
     .leaf:nth-child(6n+3) {
-      animation-duration: 8s
+      animation-duration: 0.8s
     }
     .leaf:nth-child(6n+4) {
-      animation-duration: 9s
+      animation-duration: 0.9s
     }
     .leaf:nth-child(6n+5) {
-      animation-duration: 10s;
+      animation-duration: 0.10s;
     }
 
     .logoText {

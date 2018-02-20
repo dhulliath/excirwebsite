@@ -18,6 +18,10 @@ $nav-border-radius: 5px;
 @import 'components/*';
 @import 'pages/*';
 
+//photoswipe
+@import 'photoswipe/main';
+@import 'photoswipe/default-skin/default-skin';
+
 * {
 	box-sizing: border-box;
 }
