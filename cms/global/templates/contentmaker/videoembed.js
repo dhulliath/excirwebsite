@@ -6,12 +6,6 @@
                 type: 'youtube',
                 pre: '<iframe width="100%" height="100%" src="',
                 post: '?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>'
-            },
-            local: {
-                $type_hidden: true,
-                type: 'local',
-                pre: '<video',
-                post: ''
             }
         },
         video_source: {
