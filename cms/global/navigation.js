@@ -35,7 +35,7 @@
 					{
 						name: 'company',
 						label: 'Company',
-						weight: '0'
+						weight: '1'
 					}
 				]
 			}

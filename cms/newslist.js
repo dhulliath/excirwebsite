@@ -7,7 +7,7 @@
 		nav: {
 			label: 'News',
 			location: '@@global._navigation.navgroupitems.main',
-			weight: '0',
+			weight: '2',
 			$label_size: 6,
 			$location_size: 6,
 			$weight_size: 6
