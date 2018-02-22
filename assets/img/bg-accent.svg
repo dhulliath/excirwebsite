@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" preserveAspectRatio="slice">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop stop-color="gold" stop-opacity="0.1" offset="0%" />
+            <stop stop-color="black" stop-opacity="0" offset="100%" />
+        </linearGradient>
+        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(65)">
+            <stop stop-color="gold" stop-opacity="0.1" offset="0%" />
+            <stop stop-color="black" stop-opacity="0.1" offset="100%" />
+        </linearGradient>
+        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop stop-color="gold" stop-opacity="0.1" offset="0%" />
+            <stop stop-color="black" stop-opacity="0.1" offset="100%" />
+        </linearGradient>
+    </defs>
+    <!--<path fill="url(#grad1)" d="M0,0v10h5z" />
+    <path fill="url(#grad2)" d="M0,0h10l-5,10z" />
+    <path fill="url(#grad3)" d="M10,0v10h-5z" />-->
+    <path fill="url(#grad1)" d="M0,0l1,10h2z" />
+    <path fill="url(#grad1)" d="M0,0l5,10h2z" />
+    <path fill="url(#grad1)" d="M0,0l9,10h2z" />
+    <path fill="url(#grad1)" d="M0,0l10,1v2z" />
+    <path fill="url(#grad1)" d="M0,0l10,5v2z" />
+</svg>

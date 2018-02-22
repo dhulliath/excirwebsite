@@ -1,0 +1,52 @@
+$card-border-radius: 0.5em;
+.card {
+    width: calc(50% - 2em);
+    @include viewPhone() {
+        width: calc(100% - 2em);
+    }
+    margin: 1em;
+    float: left;
+    border-radius: $card-border-radius;
+    border: 1px solid lighten($color-background, 10%);
+    background: linear-gradient(135deg, $color-background, lighten($color-background, 7%));
+    .top {
+        position: relative;
+        max-height: 100vw;
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        border-top-left-radius: $card-border-radius;
+        border-top-right-radius: $card-border-radius;
+        &:after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+        .title {
+            background-color: rgba(black, 0.5);
+            text-align: center;
+            font-size: 1.25em;
+            color: $color-trim;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            line-height: 2em;
+            @extend .font-anton;
+        }
+    }
+    .bottom {
+        .caption {
+            text-align: center; //text-decoration: underline;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: white;
+            margin-top: 0.5em;
+            @extend .font-montserrat;
+        }
+        .text {
+            padding: 1em;
+            @extend .font-montserrat;
+        }
+    }
+}

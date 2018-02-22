@@ -2,7 +2,7 @@ const local_app = function () {}
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 
-local_app.prototype.transporter = null
+//local_app.prototype.transporter = null
 
 local_app.prototype.init = function (app) {
 	var transporter = nodemailer.createTransport({

@@ -7,5 +7,19 @@
     <span class="teaser">{{{marked content._blog.stub.teaser}}}</span>
 </div>
 {{/each}}
+{{#unless first}}
+<a href="{{prev_page}}">
+    <div class="bigbutton">
+        Newer 
+    </div>
+</a>
+{{/unless}}
+{{#unless last}}
+<a href="{{next_page}}">
+    <div class="bigbutton">
+        Older
+    </div>
+</a>
+{{/unless}}
 {{/blog}}
 {{/wrapper}}

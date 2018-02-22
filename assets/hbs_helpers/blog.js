@@ -50,7 +50,7 @@ enduro.templating_engine.registerHelper('blog', function (options) {
                     first: false,
                     last: blog_entries.length - i <= max_posts,
                     next_page: '/blogs/page/' + (i / max_posts + 2) + '/',
-                    prev_page: i === max_posts? '/blog/' : ('/blog/page/' + (i / max_posts) + '/')
+                    prev_page: i === max_posts? '/blogs/' : ('/blog/page/' + (i / max_posts) + '/')
                 }
                 // copy index page params to other pages
                 for (let i in options.data.root) {
@@ -59,7 +59,7 @@ enduro.templating_engine.registerHelper('blog', function (options) {
                 // still replace copied pagename with appropriate one
                 context._meta.pagename = context.page_name
                 // drop `index.html` files in `page-N` folders so they can be served as static
-                enduro.api.temper.render('blogs_nohelpers', context)
+                enduro.api.temper.render('blogs', context)
                 .then(data => {
                     let folder = path.join(enduro.project_path, enduro.config.build_folder, context.page_name, 'index.html')
                     flat_helpers.ensure_directory_existence(folder)

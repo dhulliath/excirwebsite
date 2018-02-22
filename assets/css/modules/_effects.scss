@@ -24,3 +24,10 @@
         background-repeat: no-repeat;
     }
 }
+
+%fillBGSolid {
+    border-radius: 1px;
+    background: linear-gradient(135deg, $color-trim, $color-accent);
+    color: black;
+    border: solid 2px $color-trim;
+}

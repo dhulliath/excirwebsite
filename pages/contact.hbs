@@ -5,6 +5,11 @@
     <input id="formCompany" type="text" name="company" placeholder="Your Company" >
     <input id="formEmail" type="email" name="replyEmail" placeholder="Your Contact Email" >
     <input id="formPhonenumber" type="text" name="phoneNumber" placeholder="Your Phone Number" >
+    <select name="formSubject" id="category">
+        {{#each categories}}
+        <option>{{caption}}</option>
+        {{/each}}
+    </select>
     <textarea id="formMessage" name="message" placeholder="What do you think?"></textarea>
     <input type="submit" value="Send Email!">
 </form>

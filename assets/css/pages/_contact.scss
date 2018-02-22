@@ -5,7 +5,7 @@ $form-margins: 0.5em;
     display: none;
 }
 
-%form-styling {
+%form-styling2 {
     @extend .font-montserrat;
     font-size: 1.1em;
     padding: 0.5em;
@@ -16,7 +16,21 @@ $form-margins: 0.5em;
     margin: $form-margins;
 }
 
+%form-styling {
+    @extend .font-montserrat;
+    font-size: 1.1em;
+    padding: 0.5em;
+    border-radius: 1px;
+    background: linear-gradient(135deg, $color-trim, $color-accent);
+    color: black;
+    border: solid 2px $color-trim;
+    margin: $form-margins;
+}
+
 form[name~=emailContact] {
+    input, textarea, select {
+        @extend %form-styling;
+    }
     input {
         &[type~=text],
         &[type~=email] {
@@ -26,16 +40,15 @@ form[name~=emailContact] {
                 width: calc(100% - #{$form-margins * 2});
             }
         }
-        &[type~=text],
-        &[type~=email],
-        &[type~=submit] {
-            @extend %form-styling;
-        }
     }
     textarea {
-        @extend %form-styling;
+        
         resize: none;
         width: calc(100% - #{$form-margins * 2});
         height: 16em;
+    }
+    select {
+        
+        width: calc(100% - #{$form-margins * 2});
     }
 }

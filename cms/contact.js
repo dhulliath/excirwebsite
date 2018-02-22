@@ -17,8 +17,14 @@
 		$nav_size: 8
 	},
 	$_page_expander: false,
+	$_templates_hidden: true,
 	_templates: {
-		formfields: {}
+		formfields: {},
+		categories: {
+			category: {
+				caption: ''
+			}
+		}
 	},
 	contact: {
 		targetEmail: 'info@excirworks.com',
@@ -30,5 +36,14 @@
 			country: 'CA',
 			postal_code: 'T1Y 5L3'
 		}
-	}
+	},
+	$categories_templatitator: '@@_templates.categories',
+	categories: [
+		{
+			caption: 'General Inquiry'
+		},
+		{
+			caption: 'Investor Relation'
+		}
+	]
 }

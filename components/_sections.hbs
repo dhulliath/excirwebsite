@@ -11,10 +11,46 @@
 </div>
 {{/if}} 
 
+{{#if embedded_video}}
+<div class="embed local">
+    <video controls>
+        {{#each sources}}
+        <source src="{{url}}" type="{{type}}" />
+        {{/each}}
+    </video>
+</div>
+{{/if}}
+
 {{#if image}}
 <img src="{{href}}" class="{{#each style.position.classes}}{{this}} {{/each}}{{#each style.size.classes}}{{this}} {{/each}}"
 /> 
 {{/if}} 
+
+{{#if card}}
+<div class="card">
+    <div class="top" {{#if img.image}}style="background-image: url({{img.image}});"{{/if}}>
+        <div class="title">{{txt.title}}</div>
+    </div>
+    <div class="bottom">
+        <div class="caption">{{txt.caption}}</div>
+        <div class="text">{{{marked txt.text}}}</div>
+    </div>
+</div>
+{{/if}}
+
+{{#if cards}}
+{{#each cards}}
+    <div class="card">
+        <div class="top" {{#if image}}style="background-image: url({{image}});"{{/if}}>
+            <div class="title">{{title}}</div>
+        </div>
+        <div class="bottom">
+            <div class="caption">{{caption}}</div>
+            <div class="text">{{{marked text}}}</div>
+        </div>
+    </div>
+{{/each}}
+{{/if}}
 
 {{#if gallery}}
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

@@ -2,7 +2,7 @@
 	_page: {
 		title: '',
 		styling: {
-			theme: '@@global.styling.page_styles.standard'
+			theme: '@@global.styling.page_styles.landing'
 		},
 		nav: {
 			label: 'Landing',

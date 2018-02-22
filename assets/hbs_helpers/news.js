@@ -59,7 +59,7 @@ enduro.templating_engine.registerHelper('news', function (options) {
                 // still replace copied pagename with appropriate one
                 context._meta.pagename = context.page_name
                 // drop `index.html` files in `page-N` folders so they can be served as static
-                enduro.api.temper.render('newslist_nohelpers', context)
+                enduro.api.temper.render('newslist', context)
                 .then(data => {
                     let folder = path.join(enduro.project_path, enduro.config.build_folder, context.page_name, 'index.html')
                     flat_helpers.ensure_directory_existence(folder)

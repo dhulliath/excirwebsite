@@ -1,35 +1,100 @@
-body {
-	background: linear-gradient(black, maroon);
-	height:100%;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+$view-tablet-threshold: 900px;
+$view-mobile-threshold: 600px;
+$color-text: lightgrey;
+$color-background: black;
+$color-accent: orange;
+$color-trim: gold;
+$color-step: 10%;
+$nav-item-width: 140px;
+$nav-item-height: 40px;
+$nav-border-radius: 5px;
+@import 'modules/mediaqueries';
+@import 'modules/typing';
+@import 'modules/effects';
+@import 'modules/embeds';
+
+@import 'modules/navigation_main';
+
+@import 'components/*';
+@import 'pages/*';
+
+
+* {
+	box-sizing: border-box;
 }
-div {
-	color: white;
+
+body.debug {
+	* {
+		outline: 1px solid rgba($color-accent, 0.25);
+	}
+	div.debugbutton {
+		color: $color-background;
+		background-color: $color-accent;
+	}
+	
 }
-.excirLogo {
-	max-width: 1200px;
-	margin: auto;
-	display: block;
+div.debugbutton {
+	position: fixed;
+	top: 0;
+	left: 0;
+	user-select: none;
+	color: $color-accent;
+	font-weight: 900;
+	background-color: $color-background;
 }
-.excirLogoBackup {
-	display:none;
-	font-size: 3em;
-	font-weight: bold;
-	text-transform: uppercase;
-	text-align:center;
-	background: linear-gradient(goldenrod, red);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	@media screen and (max-width: 600px) {
-		display: block;
+
+a {
+	color: $color-text;
+	&:hover, &:active {
+		color: lighten($color-text, 20%);
 	}
 }
-#glitterbg {
-	position:fixed;
-	top:0;
-	left:0;
-	bottom:0;
-	right:0;
-	z-index:-10;
+
+body {
+	background: $color-background;
+	height: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: $color-text;
+	margin: 0;
+	padding-top: 1.25em;
+}
+
+main {
+	max-width: $view-tablet-threshold;
+	margin: auto;
+}
+
+header {
+	margin-bottom: 1.25em;
+	@include viewPhone() {
+		display: none;
+	}
+}
+
+.excirLogo {
+	margin: auto;
+	max-width: $view-tablet-threshold;
+	user-select: none;
+}
+
+footer {
+	clear: both;
+	margin-top: 45px;
+	@extend .font-anton;
+	color: $color-trim;
+	text-align: center;
+
+	img {
+		user-select: none;
+	}
+}
+
+
+
+article {
+	margin: auto;
+	padding-top: #{$nav-item-height};
+	width: 100%;
+	max-width: $view-tablet-threshold;
 }

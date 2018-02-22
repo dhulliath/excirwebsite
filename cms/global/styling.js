@@ -22,12 +22,6 @@
 				stylesheets: [
 					{
 						src: '/assets/css/main.css'
-					},
-					{
-						src: '/assets/css/photoswipe/main.css'
-					},
-					{
-						src: '/assets/css/photoswipe/default-skin/default-skin.css'
 					}
 				]
 			}
