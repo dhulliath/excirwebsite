@@ -10,7 +10,7 @@ enduro.templating_engine.registerHelper('news', function (options) {
     // will store all the news entries
     var news_entries
     //const max_posts = Number(options.data.root.max_number_of_entries_on_the_page)
-    const max_posts = Number(10)
+    const max_posts = Number(5)
     // get_cms_list will return a structured list of all pages in a project
     return enduro.api.pagelist_generator.get_cms_list()
         .then((pagelist) => {

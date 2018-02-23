@@ -8,7 +8,7 @@
 			$date_value: '2018-02-15'
 		},
 		stub: {
-			teaser: 'Probably what you think it is',
+			teaser: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus dolor, luctus in odio mattis, interdum bibendum est. Quisque non pellentesque ex. Morbi faucibus libero non finibus convallis. Pellentesque sit amet imperdiet justo. Aenean et tempus purus. Donec quis tempor justo. Vestibulum convallis risus non hendrerit blandit. Sed at tristique est, ut ullamcorper justo. Donec eu efficitur velit, ac hendrerit massa. Morbi commodo et leo nec tincidunt. Quisque nisi est, accumsan ut tempor et, molestie vel urna. Nam commodo est et congue porta. Nunc porta tellus quis risus sollicitudin, at mollis felis ultricies.',
 			$teaser_type: 'textarea'
 		},
 		$publishing_size: 4,

@@ -8,7 +8,7 @@
 			$date_value: '2018-02-01'
 		},
 		stub: {
-			teaser: 'We be here!',
+			teaser: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tempus, magna at gravida condimentum, tortor felis scelerisque arcu, vel tincidunt lectus lorem at dolor. Nullam in turpis aliquam, dapibus nibh in, tempus mauris. Cras sollicitudin massa nec pulvinar malesuada. Curabitur quis risus sed augue congue faucibus nec condimentum libero. Integer ultricies accumsan ligula sed egestas. Ut in ante id dolor lacinia sagittis a et nibh. Donec consectetur suscipit finibus. Fusce risus ante, tincidunt sed ipsum sed, bibendum pellentesque diam. In odio turpis, facilisis id luctus quis, mollis id ex. Donec tempus porta orci sit amet blandit. Curabitur maximus quam in dignissim pharetra. In sed metus justo. Nunc vel dictum metus, eget viverra ipsum. Nunc vel nisl a sem elementum congue.',
 			$teaser_type: 'textarea'
 		},
 		$publishing_size: 4,

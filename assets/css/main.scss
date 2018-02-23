@@ -80,10 +80,21 @@ header {
 footer {
 	clear: both;
 	margin-top: 45px;
+	padding-top: 1.25em;
 	@extend .font-anton;
 	color: $color-trim;
 	text-align: center;
-
+	border-top: 1px solid $color-trim;
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 0px;
+		left:0px;
+		height: 1px;
+		width: 100%;
+		content: "";
+		border-top:1px solid $color-accent;
+	}
 	img {
 		user-select: none;
 	}

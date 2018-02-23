@@ -1,25 +1,5 @@
 {{#>wrapper}}
 {{#blog}}
-{{#each this.entries}}
-<div class="entry blog">
-    <a href="/blog/{{page_slug}}"><span class="title">{{content._blog.title}}</span></a>
-    <span class="date">{{content._blog.publishing.date}}</span>
-    <span class="teaser">{{{marked content._blog.stub.teaser}}}</span>
-</div>
-{{/each}}
-{{#unless first}}
-<a href="{{prev_page}}">
-    <div class="bigbutton">
-        Newer 
-    </div>
-</a>
-{{/unless}}
-{{#unless last}}
-<a href="{{next_page}}">
-    <div class="bigbutton">
-        Older
-    </div>
-</a>
-{{/unless}}
+{{>blog_header}}
 {{/blog}}
 {{/wrapper}}

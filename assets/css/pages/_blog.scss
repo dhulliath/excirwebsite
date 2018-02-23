@@ -1,12 +1,21 @@
 .entry.blog {
+    margin-bottom: 1em;
     .title {
+        @extend .font-anton;
         display: block;
         font-size: 1.5em;
     }
     .date {
-
+        text-decoration: overline;
+        font-size: 0.8em;
+        
     }
     .teaser {
-
+        & *:first-child {
+            margin-top: 0px;
+        }
+        & *:last-child {
+            margin-bottom: 0px;
+        }
     }
 }
