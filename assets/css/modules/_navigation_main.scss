@@ -38,6 +38,10 @@ nav>div {
     margin: auto;
     width: fit-content;
     height: $nav-item-height;
+	@include viewPhone() {
+		display: block;
+		width: 100%;
+	}
 }
 
 
@@ -54,6 +58,7 @@ nav ul {
 	margin:0px auto;
 	list-style: none;
 	list-style-image: url(data:0);
+	list-style-position: outside;
 	position: relative;
 	}
 

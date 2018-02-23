@@ -62,5 +62,8 @@
 2400 - stop
 3 hour 15 minutes
 
+23 February
+1030 - start
+
 ===
 32 hours 0 minutes
