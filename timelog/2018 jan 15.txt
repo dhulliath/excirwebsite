@@ -59,8 +59,8 @@
 1515 - stopbreak
 3 hours 45 minutes
 2045 - start
-2215 - stop
-1 hour 30 minutes
+2400 - stop
+3 hour 15 minutes
 
 ===
-30 hours 15 minutes
+32 hours 0 minutes
