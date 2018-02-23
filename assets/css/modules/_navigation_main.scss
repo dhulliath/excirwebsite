@@ -8,13 +8,15 @@ $color-nav-highlight: $color-accent;
 }
 
 nav { 
+	display: block;
 	position: relative;
 	z-index: 11;
 	margin:0;
 	padding: 0;
 	background-color: none;
     line-height: $nav-item-height;
-    max-width: $view-tablet-threshold;
+	text-align: center;
+    //max-width: $view-tablet-threshold;
     width: 100%;
     transition: background-color 0.32s;
     //text-align:center;
@@ -31,9 +33,9 @@ nav.sticky {
   padding-top: 80px;
 }
 
-nav div {
-    display: block;
-    margin: 0px auto;
+nav>div {
+    display: inline-block;
+    margin: auto;
     width: fit-content;
     height: $nav-item-height;
 }
@@ -80,6 +82,7 @@ nav a:hover {
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
 nav ul ul {
+	left: 0px;
 	display: none;
 	position: absolute; 
 	/* has to be the same number as the "line-height" of "nav a" */

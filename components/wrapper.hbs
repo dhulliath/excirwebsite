@@ -3,23 +3,18 @@
 
 <head>
     <title>{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}</title>
-    {{#if _page.styling.theme.stylesheets}}
-    {{#each _page.styling.theme.stylesheets}}
-    {{#if src}}<link rel="stylesheet" href="{{src}}">{{/if}}
-    {{#if cascadingstylesheet}}<link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}}
-    {{/each}}
-    {{else}}
-    {{#each global.styling.page_styles.standard.stylesheets}}
-    {{#if src}}<link rel="stylesheet" href="{{src}}">{{/if}}
-    {{#if cascadingstylesheet}}<link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}}
-    {{/each}}
-    {{/if}}
+    {{#if _page.styling.theme.stylesheets}} {{#each _page.styling.theme.stylesheets}} {{#if src}}
+    <link rel="stylesheet" href="{{src}}">{{/if}} {{#if cascadingstylesheet}}
+    <link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}} {{/each}} {{else}} {{#each global.styling.page_styles.standard.stylesheets}} {{#if src}}
+    <link rel="stylesheet"
+        href="{{src}}">{{/if}} {{#if cascadingstylesheet}}
+    <link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}} {{/each}} {{/if}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <div class="debugbutton">DEBUG</div>
-    
+
     <div class="excirLogo">
         <a href="/">
             <!--<svg viewBox="0 0 194.887 49">
@@ -31,39 +26,41 @@
             <img src="{{global.site.image.src}}" width="100%">
         </a>
     </div>
+    <nav>
+        <div>
+            <label for="drop" class="toggle">&#9776; {{#if _page.title}}{{_page.title}}{{else}}Menu{{/if}} </label>
+            <input type="checkbox" id="drop" /> {{#navlist 'main'}}
+            <ul class="menu">
+                {{#each this}}
+                <li>
+                    {{#if subgroup}}<label for="drop-{{subgroup}}" class="toggle">{{label}} +</label>{{/if}}
+                    <a href="{{#if fullpath}}{{fullpath}}{{else}}javascript:void(){{/if}}">{{label}}</a> {{#if subgroup}}
+                    <input type="checkbox" id="drop-{{subgroup}}" /> {{#navlist subgroup}}
+                    <ul class="hidden">
+                        {{#each this}}
+
+                        <a href="{{fullpath}}">
+                            <li>{{label}}</li>
+                        </a>
+
+                        {{/each}}
+                    </ul>
+                    {{/navlist}} {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+            {{/navlist}}
+        </div>
+    </nav>
     <main>
-        <nav>
-            <div>
-                <label for="drop" class="toggle">&#9776; {{#if _page.title}}{{_page.title}}{{else}}Menu{{/if}} </label>
-                <input type="checkbox" id="drop" /> {{#navlist 'main'}}
-                <ul class="menu">
-                    {{#each this}}
-                    <li>
-                        {{#if subgroup}}<label for="drop-{{subgroup}}" class="toggle">{{label}} +</label>{{/if}}
-                        <a href="{{#if fullpath}}{{fullpath}}{{else}}javascript:void(){{/if}}">{{label}}</a> {{#if subgroup}}
-                        <input type="checkbox" id="drop-{{subgroup}}" /> {{#navlist subgroup}}
-                        <ul class="hidden">
-                            {{#each this}}
-                            
-                                <a href="{{fullpath}}"><li>{{label}}</li></a>
-                            
-                            {{/each}}
-                        </ul>
-                        {{/navlist}} {{/if}}
-                    </li>
-                    {{/each}}
-                </ul>
-                {{/navlist}}
-            </div>
-        </nav>
+
         <article>
             <header>
                 {{#if _page.title}}
                 <div class="lineAround">
                     {{_page.title}}
                 </div>
-                {{/if}}
-                {{#if _blog.title}}
+                {{/if}} {{#if _blog.title}}
                 <div class="lineAround">
                     {{_blog.title}}
                 </div>
@@ -77,16 +74,11 @@
             {{{marked global.site.footer}}}
         </footer>
     </main>
-    
+
 </body>
 <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
-{{#if _page.styling.theme.stylesheets}}
-{{#each _page.styling.theme.stylesheets}}
-{{#if javascript}}<script src="{{javascript}}"></script>{{/if}}
-{{/each}}
-{{else}}
-{{#each global.styling.page_styles.standard.stylesheets}}
-{{#if javascript}}<script src="{{javascript}}"></script>{{/if}}
-{{/each}}
-{{/if}}
+{{#if _page.styling.theme.stylesheets}} {{#each _page.styling.theme.stylesheets}} {{#if javascript}}
+<script src="{{javascript}}"></script>{{/if}} {{/each}} {{else}} {{#each global.styling.page_styles.standard.stylesheets}} {{#if javascript}}
+<script src="{{javascript}}"></script>{{/if}} {{/each}} {{/if}}
+
 </html>
