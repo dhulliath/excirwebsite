@@ -64,6 +64,8 @@
 
 23 February
 1030 - start
+1130 - stop
+1 hour
 
 ===
-32 hours 0 minutes
+33 hours 0 minutes
