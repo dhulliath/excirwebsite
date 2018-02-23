@@ -2,7 +2,8 @@
 
 _generated
 .enduro_secure
-
+start.ps1
+start.sh
 
 # Logs
 logs

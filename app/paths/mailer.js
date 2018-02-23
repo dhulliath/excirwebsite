@@ -12,12 +12,12 @@ var recaptcha = new reCAPTCHA({
 
 local_app.prototype.init = function (app) {
 	var transporter = nodemailer.createTransport({
-		host: 'smtp.ethereal.email',
-		port: 587,
+		host: process.env.emailSMTPServer,
+		port: parseInt(process.env.emailPort),
 		secure: false,
 		auth: {
-			user: 'xnzmgj2nil5c5chl@ethereal.email',
-			pass: 'C9pueduutAM2QhFYqF'
+			user: process.env.emailUsername,
+			pass: process.env.emailPassword
 		}
 	})
 
@@ -48,8 +48,8 @@ local_app.prototype.init = function (app) {
 					from: '"Noreply" <noreply@excirworks.com>',
 					replyTo: '"' + req.body.name + '" <' + req.body.replyEmail + '>',
 					to: '"Excir Info" <info@excirworks.com>',
-					subject: 'Site Inquiry: ' + req.body.company,
-					text: 'phone number: ' + req.body.phoneNumber + '\n' + req.body.message
+					subject: req.body.formSubject + ': ' + req.body.company,
+					text: 'company: ' + req.body.company + '\nphone number: ' + req.body.phoneNumber + '\n' + req.body.message
 				}
 				transporter.sendMail(mailOptions, (error, info) => {
 					if (error) {
