@@ -45,9 +45,9 @@ local_app.prototype.init = function (app) {
 
 			if (!code.honeypot && !code.error) {
 				let mailOptions = {
-					from: '"Noreply" <noreply@excirworks.com>',
+					from: '"Info" <' + process.env.emailUsername + '>',
 					replyTo: '"' + req.body.name + '" <' + req.body.replyEmail + '>',
-					to: '"Excir Info" <info@excirworks.com>',
+					to: '"Excir Info" <' + process.env.emailUsername + '>',
 					subject: req.body.formSubject + ': ' + req.body.company,
 					text: 'company: ' + req.body.company + '\nphone number: ' + req.body.phoneNumber + '\n' + req.body.message
 				}
@@ -61,7 +61,7 @@ local_app.prototype.init = function (app) {
 			}
 		})
 		.catch(function(err) {
-			res.send(err)
+			res.redirect('/email/captchafail/')
 		})
 	})
 }

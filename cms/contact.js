@@ -26,17 +26,6 @@
 			}
 		}
 	},
-	contact: {
-		targetEmail: 'info@excirworks.com',
-		address: {
-			unit: 'Bay 12',
-			address: '2712 - 37 Avenue NE',
-			city: 'Calgary',
-			region: 'AB',
-			country: 'CA',
-			postal_code: 'T1Y 5L3'
-		}
-	},
 	$categories_templatitator: '@@_templates.categories',
 	categories: [
 		{

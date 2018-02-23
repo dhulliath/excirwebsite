@@ -27,6 +27,11 @@ $form-margins: 0.5em;
     margin: $form-margins;
 }
 
+.googlemaps {
+    width: 100%;
+    min-height: 50vh;
+}
+
 form[name~=emailContact] {
     input, textarea, select {
         @extend %form-styling;

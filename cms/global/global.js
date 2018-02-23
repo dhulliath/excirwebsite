@@ -21,6 +21,9 @@
 			email: 'info@excirworks.com'
 		}
 	},
+	keys: {
+		google_maps_embed_api: 'AIzaSyD-0Zh06uc_M12ac3zdTtUtSQu0Wy6U7DM'
+	},
 	$_hidden_hidden: true,
 	_hidden: {
 		logo_images: {
