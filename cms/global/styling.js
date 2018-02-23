@@ -4,7 +4,10 @@
 		_templates: {
 			csstemplate: {
 				css_file: {
-					src: ''
+					cascadingstylesheet: ''
+				},
+				js_file: {
+					javascript: ''
 				}
 			}
 		},
@@ -14,6 +17,9 @@
 				stylesheets: [
 					{
 						src: '/assets/css/landing.css'
+					},
+					{
+						javascript: 'https://www.google.com/recaptcha/api.js'
 					}
 				]
 			},
@@ -22,6 +28,9 @@
 				stylesheets: [
 					{
 						src: '/assets/css/main.css'
+					},
+					{
+						javascript: 'https://www.google.com/recaptcha/api.js'
 					}
 				]
 			}

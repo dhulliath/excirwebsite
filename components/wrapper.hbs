@@ -5,10 +5,14 @@
     <title>{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}</title>
     {{#if _page.styling.theme.stylesheets}}
     {{#each _page.styling.theme.stylesheets}}
-    <link rel="stylesheet" href="{{src}}"> {{/each}}
+    {{#if src}}<link rel="stylesheet" href="{{src}}">{{/if}}
+    {{#if cascadingstylesheet}}<link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}}
+    {{/each}}
     {{else}}
     {{#each global.styling.page_styles.standard.stylesheets}}
-    <link rel="stylesheet" href="{{src}}"> {{/each}}
+    {{#if src}}<link rel="stylesheet" href="{{src}}">{{/if}}
+    {{#if cascadingstylesheet}}<link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}}
+    {{/each}}
     {{/if}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -76,5 +80,13 @@
     
 </body>
 <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
-
+{{#if _page.styling.theme.stylesheets}}
+{{#each _page.styling.theme.stylesheets}}
+{{#if javascript}}<script src="{{javascript}}"></script>{{/if}}
+{{/each}}
+{{else}}
+{{#each global.styling.page_styles.standard.stylesheets}}
+{{#if javascript}}<script src="{{javascript}}"></script>{{/if}}
+{{/each}}
+{{/if}}
 </html>
