@@ -1,20 +1,20 @@
 .fl-left {
     float:left;
-    text-align: left;
+    text-align: center;
     @include viewDesktop() {
         position: relative;
         left: -$view-overshoot;
-        margin-right: -$view-overshoot;
+        margin-right: -#{$view-overshoot - 5px};
     }
     
 }
 .fl-right {
     float:right;
-    text-align: right;
+    text-align: center;
     @include viewDesktop() {
         position: relative;
         right: -$view-overshoot;
-        margin-left: -$view-overshoot;
+        margin-left: -#{$view-overshoot - 5px};
     }
 }
 .fl-center {
