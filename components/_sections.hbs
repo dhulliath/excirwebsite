@@ -5,6 +5,12 @@
 </div>
 {{/if}} 
 
+{{#if header}}
+<div class="header{{#each style.position.classes}} {{this}}{{/each}}{{#each style.size.classes}} {{this}}{{/each}}{{#each style.border.classes}} {{this}}{{/each}}">
+    {{{header}}}
+</div>
+{{/if}}
+
 {{#if embed_video}}
 <div class="embed youtube">
     {{{service.pre}}}{{url}}{{{service.post}}}
@@ -22,7 +28,7 @@
 {{/if}}
 
 {{#if image}}
-<img src="{{href}}" class="{{#each style.position.classes}}{{this}} {{/each}}{{#each style.size.classes}}{{this}} {{/each}}"
+<img src="{{href}}" class="{{#each style.position.classes}} {{this}}{{/each}}{{#each style.size.classes}} {{this}}{{/each}}{{#each style.border.classes}} {{this}}{{/each}}"
 /> 
 {{/if}} 
 

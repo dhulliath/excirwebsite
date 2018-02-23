@@ -20,16 +20,15 @@
 	$_page_expander: false,
 	_content: [
 		{
-			$markdown_type: 'title',
-			markdown: 'Text with Markdown Filter',
-			$text_type: 'textarea',
-			text: 'THE MOST EFFECTIVE AND ENVIRONMENTALLY-FRIENDLY METHOD FOR RECYCLING AND REFINING OF GOLD, PALLADIUM AND PLATINUM'
-		},
-		{
-			$markdown_type: 'title',
-			markdown: 'Text with Markdown Filter',
-			$text_type: 'textarea',
-			text: 'Excir Works Corp. recovers valuable metals from e-waste and spent catalysts using its proprietary breakthrough technology. Excir’s unique process delivers the final products in highly pure forms (> 99.99%), excluding precious metal products from refining processes. The company aims to apply its unique recycling technology all over the world to become one of the leading producer of precious metals.'
+			$header_size: 8,
+			$header_type: 'textarea',
+			header: 'THE MOST EFFECTIVE AND ENVIRONMENTALLY-FRIENDLY METHOD FOR RECYCLING AND REFINING OF GOLD, PALLADIUM AND PLATINUM',
+			$style_size: 4,
+			style: {
+				position: '@@global.styling.position_styles.center',
+				size: '@@global.styling.size_styles.fluid',
+                border: '@@global.styling.border_styles.none'
+			}
 		}
 	],
 	$_content_size: 12,

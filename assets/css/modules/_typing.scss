@@ -25,3 +25,9 @@ header {
     font-size: 2.25em;
     color: $color-trim;
 }
+
+.header {
+	font-size: 2em;
+	@extend .font-merriweather;
+	color: $color-accent;
+}

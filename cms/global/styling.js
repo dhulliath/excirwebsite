@@ -35,6 +35,26 @@
 				]
 			}
 		},
+		border_styles: {
+			none: {
+				classes: []
+			},
+			solid_trim: {
+				classes: [
+					'bdr-trim'
+				]
+			},
+			rounded: {
+				classes: [
+					'bdr-round'
+				]
+			},
+			margin: {
+				classes: [
+					'bdr-margin'
+				]
+			}
+		},
 		position_styles: {
 			float_left: {
 				classes: [
