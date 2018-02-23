@@ -1,10 +1,3 @@
-{{#each this.entries}}
-<div class="entry blog">
-    <a href="/news/{{page_slug}}"><span class="title">{{content._blog.title}}</span></a>
-    <span class="teaser">{{{marked content._blog.stub.teaser}}}</span>
-    <span class="date">{{content._blog.publishing.date}}</span>
-</div>
-{{/each}}
 {{#unless first}}
 <div class="bigbutton">
     <a href="{{prev_page}}">
@@ -12,6 +5,13 @@
     </a>
 </div>
 {{/unless}}
+{{#each this.entries}}
+<div class="entry blog">
+    <a href="/news/{{page_slug}}"><span class="title">{{content._blog.title}}</span></a>
+    <span class="teaser">{{{marked content._blog.stub.teaser}}}</span>
+    <span class="date">{{content._blog.publishing.date}}</span>
+</div>
+{{/each}}
 {{#unless last}}
 <div class="bigbutton">
     <a href="{{next_page}}">

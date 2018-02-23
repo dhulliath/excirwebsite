@@ -45,12 +45,12 @@
 			$href_size: 4,
 			image: 'Image with Styling',
 			$href_type: 'image',
-			href: '/remote/direct_uploads/1519366875_Sinestrosciver.png',
+			href: '/remote/direct_uploads/1519409074_wallhaven-570208.jpg',
 			$style_size: 8,
 			style: {
 				position: '@@global.styling.position_styles.float_left',
 				size: '@@global.styling.size_styles.quarter',
-				border: '@@global.styling.border_styles.margin'
+				border: '@@global.styling.border_styles.rounded'
 			}
 		},
 		{
@@ -58,6 +58,25 @@
 			markdown: 'Text with Markdown Filter',
 			$text_type: 'textarea',
 			text: '# Nulla facilisi. \n\nMorbi blandit, libero in feugiat sodales, justo dui euismod arcu, ornare pharetra arcu dui vel purus. Vivamus faucibus dui arcu, sit amet lacinia tortor feugiat non. Nullam eget magna sed urna condimentum dignissim id venenatis magna. Integer bibendum, velit a dignissim mattis, libero nulla ullamcorper tortor, sit amet pellentesque magna ante eu turpis. In nec blandit tortor, sed congue mauris. Proin ullamcorper augue at sapien euismod, a feugiat justo malesuada. Vestibulum nibh neque, ultrices vitae volutpat a, rutrum at eros. Donec pulvinar risus ac vestibulum aliquet. Morbi mattis massa dolor, ut vestibulum nisi finibus eu. Cras eget dolor non nulla aliquet rhoncus non at enim.\n\nNam lacinia et nibh sit amet bibendum. Aenean ac mattis diam. Fusce aliquet justo mi, eget sodales dolor tempus sit amet. In fermentum egestas ipsum, ac elementum mi suscipit sit amet. Etiam ullamcorper ex eu purus luctus, eget auctor metus facilisis. Donec quis posuere tortor, a dignissim ante. Etiam fringilla elit in augue lacinia, a ornare metus condimentum. Maecenas euismod semper libero et porttitor. Nulla a ipsum sit amet eros efficitur commodo eget sed est. Donec feugiat ex id turpis facilisis, ut efficitur leo dignissim. Suspendisse enim dolor, placerat sit amet est et, luctus efficitur mi. Sed diam purus, maximus sed augue in, egestas porttitor justo. Vivamus dictum dui a sapien aliquet, sit amet lobortis ex molestie.'
+		},
+		{
+			$image_type: 'title',
+			$href_size: 4,
+			image: 'Image with Styling',
+			$href_type: 'image',
+			href: '/remote/direct_uploads/1519409566_wallhaven-593190.jpg',
+			$style_size: 8,
+			style: {
+				position: '@@global.styling.position_styles.float_right',
+				size: '@@global.styling.size_styles.quarter',
+				border: '@@global.styling.border_styles.rounded'
+			}
+		},
+		{
+			$markdown_type: 'title',
+			markdown: 'Text with Markdown Filter',
+			$text_type: 'textarea',
+			text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec quam eget massa elementum viverra et in risus. Aenean eget turpis et quam ultricies placerat. Curabitur in augue et est consequat viverra. Nullam at mi vel mi laoreet elementum. Praesent nisi magna, posuere quis pulvinar eu, pretium at ex. Nunc euismod sit amet urna vel eleifend. Aenean porta diam at neque pretium mattis. In quam nisl, finibus et dui eget, interdum tempor leo. Phasellus non feugiat lacus. Praesent ullamcorper lacus sit amet enim sollicitudin vulputate. Integer augue tortor, pellentesque non mi sed, faucibus hendrerit eros. Donec vel ante semper leo placerat iaculis. Nunc at purus eu tortor blandit venenatis at non massa. Aenean non nisl nec lectus dignissim pretium. Duis volutpat arcu sed nunc molestie, eget tristique mauris commodo.\n\nNam a neque egestas, condimentum justo sit amet, porttitor dolor. Vestibulum mollis arcu magna, eu pellentesque mi viverra eu. Aenean quis diam eget diam sollicitudin euismod. Vestibulum pretium, massa quis mollis varius, nulla nisl egestas dolor, vel posuere ipsum diam eget turpis. Vivamus ipsum lorem, rutrum non condimentum nec, aliquam quis dui. Donec viverra metus ac orci volutpat, ut malesuada eros blandit. Sed placerat, orci sit amet tristique vestibulum, risus eros vestibulum dui, a fringilla erat nunc a libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce sit amet lorem dictum, tempus metus vel, auctor orci. Etiam et risus nec quam lacinia vestibulum id et metus. Quisque et orci lobortis, facilisis nisl vitae, porta est. Sed posuere est ut mi eleifend, sed sollicitudin dolor venenatis. Nullam tincidunt lorem sem, ac luctus velit porta at. Cras ut mi vestibulum, dictum diam vitae, luctus nunc. Aenean mattis aliquet diam sit amet dignissim.\n\nVivamus et dignissim arcu, cursus finibus sem. Sed scelerisque eros vitae molestie dictum. Integer euismod ligula neque, nec hendrerit orci ornare tempus. Donec condimentum vel massa quis vulputate. Donec euismod dui eu libero venenatis tempor. Vivamus in nisl sollicitudin, commodo tellus in, egestas metus. Praesent dictum facilisis dolor id fringilla. Nulla facilisi. Curabitur iaculis massa nunc, ut efficitur leo elementum nec. Sed fermentum enim eget nibh pretium vestibulum. In pulvinar enim sit amet lorem molestie interdum. Vestibulum est tortor, fringilla in pharetra a, varius sed metus. Nullam et diam non augue imperdiet vehicula ac eu nisl. Proin tincidunt nunc sit amet egestas faucibus. Curabitur nec est ligula. In fringilla ac elit a pretium.'
 		}
 	],
 	$_page_expander: false,
