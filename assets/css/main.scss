@@ -1,13 +1,4 @@
-$view-tablet-threshold: 900px;
-$view-mobile-threshold: 600px;
-$color-text: lightgrey;
-$color-background: black;
-$color-accent: orange;
-$color-trim: gold;
-$color-step: 10%;
-$nav-item-width: 140px;
-$nav-item-height: 40px;
-$nav-border-radius: 5px;
+@import 'variables';
 @import 'modules/mediaqueries';
 @import 'modules/typing';
 @import 'modules/effects';

@@ -1,10 +1,21 @@
 .fl-left {
     float:left;
     text-align: left;
+    @include viewDesktop() {
+        position: relative;
+        left: -$view-overshoot;
+        margin-right: -$view-overshoot;
+    }
+    
 }
 .fl-right {
     float:right;
     text-align: right;
+    @include viewDesktop() {
+        position: relative;
+        right: -$view-overshoot;
+        margin-left: -$view-overshoot;
+    }
 }
 .fl-center {
     display:block;
@@ -16,6 +27,11 @@
     width: 25%;
     @include viewPhone() {
         width: 100%;
+    }
+    @include viewDesktop() {
+        &.fl-left, &.fl-right {
+            width: calc(25% + #{$view-overshoot});
+        }
     }
 }
 .sz-half {

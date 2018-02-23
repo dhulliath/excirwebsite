@@ -10,6 +10,12 @@
     }
 }
 
+@mixin viewDesktop() {
+    @media screen and (min-width: $view-desktop-threshold) {
+        @content;
+    }
+}
+
 @mixin viewPrinter() {
     @media print {
         @content;

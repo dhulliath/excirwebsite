@@ -24,6 +24,8 @@ nav.sticky {
     position:fixed;
     background-color: $color-background;
     top:0;
+	left: 0;
+	right: 0;
 }
 .sticky + article {
   padding-top: 80px;
