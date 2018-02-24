@@ -1,0 +1,6 @@
+const _ = require('lodash')
+const Promise = require('bluebird')
+
+enduro.templating_engine.registerHelper('seo', function (options) {
+
+})

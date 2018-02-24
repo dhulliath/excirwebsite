@@ -1,4 +1,5 @@
 const deepmerge = require('deepmerge')
+const arraySort = require('array-sort');
 
 const abstractor = function () {}
 
@@ -28,7 +29,7 @@ abstractor.prototype.abstract = function (context) {
                     subgroup: {
                         name: '',
                         label: '',
-					    weight: 1
+                        weight: 1
                     }
                 }
             },
@@ -57,13 +58,12 @@ abstractor.prototype.abstract = function (context) {
             }
             //add subgroups
             for (subkey in context._navigation.navigation_groups[key].subgroup) {
-                context._navigation.navgroupitems[context._navigation.navigation_groups[key].name+'_'+context._navigation.navigation_groups[key].subgroup[subkey].name] = {
-                    name: context._navigation.navigation_groups[key].name+'_'+context._navigation.navigation_groups[key].subgroup[subkey].name
+                context._navigation.navgroupitems[context._navigation.navigation_groups[key].name + '_' + context._navigation.navigation_groups[key].subgroup[subkey].name] = {
+                    name: context._navigation.navigation_groups[key].name + '_' + context._navigation.navigation_groups[key].subgroup[subkey].name
                 }
             }
         }
-
-
+        
         return resolve()
     })
 }

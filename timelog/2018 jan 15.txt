@@ -68,8 +68,10 @@
 1 hour
 1730 - start
 1830 - stop
+1 hour
 1930 - start
-
+2230 - stop
+3 hours
 
 ===
-33 hours 0 minutes
+38 hours 0 minutes

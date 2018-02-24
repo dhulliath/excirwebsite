@@ -19,12 +19,6 @@
 
     <div class="excirLogo">
         <a href="/">
-            <!--<svg viewBox="0 0 194.887 49">
-                <style>
-                    path {stroke: white; stroke-width:1px;}
-                </style>
-                <use xlink:href="/assets/img/logo.svg#excirlogo"></use>
-            </svg>-->
             <img src="{{global.site.image.src}}" width="100%">
         </a>
     </div>
@@ -36,12 +30,12 @@
                 {{#each this}}
                 <li>
                     {{#if subgroup}}<label for="drop-{{subgroup}}" class="toggle">{{label}} +</label>{{/if}}
-                    <a href="{{#if fullpath}}{{fullpath}}{{else}}javascript:void(){{/if}}">{{label}}</a> {{#if subgroup}}
+                    <a href="{{#if url}}{{url}}{{else}}javascript:void(){{/if}}">{{label}}</a> {{#if subgroup}}
                     <input type="checkbox" id="drop-{{subgroup}}" /> {{#navlist subgroup}}
                     <ul class="hidden">
                         {{#each this}}
 
-                        <a href="{{fullpath}}">
+                        <a href="{{url}}">
                             <li>{{label}}</li>
                         </a>
 

@@ -3,7 +3,7 @@
     + Address
     + Contact
     * Services?
-    * keywords
-    * description
-* favIcon
+    + keywords
+    + description
++ favIcon
 

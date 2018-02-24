@@ -13,6 +13,7 @@ local_app.prototype.init = function (app) {
 	// express app available here
 	// don't forget these routes will be available on production server server (defaults to localhost:5000)
 	require(__dirname + '/paths/' + 'mailer').init(app)
+	require(__dirname + '/paths/' + 'debug').init(app)
 	
 }
 
