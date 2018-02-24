@@ -1,0 +1,39 @@
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "http://schema.org/Organization",
+    "name": "{{global.site.title}}",
+    "url": "{{global.seo.url_base}}",
+    "image": "{{global.seo.url_base}}{{global.site.image.src}}",
+    "address": {
+        "@type": "http://schema.org/PostalAddress"{{#if global.contact.address.country}},
+        "addressCountry": "{{global.contact.address.country}}"{{/if}}{{#if global.contact.address.region}},
+        "addressRegion": "{{global.contact.address.region}}"{{/if}}{{#if global.contact.address.city}},
+        "addressLocality": "{{global.contact.address.city}}"{{/if}}{{#if global.contact.address.postal_code}},
+        "postalCode":"{{global.contact.address.postal_code}}"{{/if}},
+        "streetAddress":"{{#if global.contact.address.unit}}{{global.contact.address.unit}}, {{/if}}{{global.contact.address.address}}"{{#if global.contact.correspond.phone}},
+        "telephone":"{{global.contact.correspond.phone}}"{{/if}}{{#if global.contact.correspond.email}},
+        "email":"{{global.contact.correspond.email}}"{{/if}}
+    }
+}
+</script>
+<link rel="icon" type="image/ico" href="{{global.seo.url_base}}/assets/img/favicon.ico" />
+<meta name="description" content="{{global.seo.description}}" />
+<meta name="keywords" content="{{global.seo.keywords}}" />
+<meta property="og:title" content="{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="{{global.seo.url_base}}/assets/img/icon.png" />
+<meta property="og:image:width" content="256" />
+<meta property="og:image:height" content="256" />
+<meta property="og:description" content="{{global.seo.description}}" />
+<meta property="og:url" content="{{global.seo.url_base}}" />
+<meta name="robots" content="noindex, nofollow" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114708590-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114708590-1');
+</script>
