@@ -9,7 +9,7 @@
 		description: 'The most effective and environmentally-friendly method for recycling and refining of gold, palladium and platinum.',
 		$description_type: 'textarea',
 		keywords: '',
-		url_base: 'excir.earlgraytease.com'
+		url_base: 'https://excir.earlgraytease.com'
 	},
 	contact: {
 		$address_size: 6,
