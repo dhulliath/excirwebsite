@@ -3,6 +3,7 @@ const moment = require('moment')
 
 const local_app = function () {}
 
+//we cache the data for up to ten minutes, it's daily anyways so whatever.
 const update_time_threshold = 600000; //ten minutes in milliseconds
 
 var quandl = new Quandl();
