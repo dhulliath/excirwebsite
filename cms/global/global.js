@@ -50,8 +50,10 @@
 	keys: {
 		google_maps_embed_api: 'AIzaSyD-0Zh06uc_M12ac3zdTtUtSQu0Wy6U7DM',
 		quandl: {
-			auth_token: '',
-			api_version: 3
+			auth_token: 'kknHW49hyq86BMG7oSmM',
+			api_version: 3,
+			database_code: 'WGC',
+			dataset_code: 'GOLD_DAILY_CAD'
 		}
 	},
 	$_hidden_hidden: true,
