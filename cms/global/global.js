@@ -1,4 +1,13 @@
 {
+	$_contenttemplate_hidden: true,
+	_contenttemplate: {
+		contact: {
+			email_contact: {
+				subject: '',
+				email_destination: ''
+			}
+		}
+	},
 	site: {
 		title: 'Excir Works',
 		image: '@@global._hidden.logo_images.vector',
@@ -24,7 +33,18 @@
 		$correspond_size: 6,
 		correspond: {
 			phone: '',
-			email: 'info@excirworks.com'
+			$email_templatitator: '@@global._contenttemplate.contact',
+			$email_size: 12,
+			email: [
+				{
+					subject: 'General Inquiry',
+					email_destination: 'info@excirworks.com'
+				},
+				{
+					subject: 'Investor Relation',
+					email_destination: 'info@excirworks.com'
+				}
+			]
 		}
 	},
 	keys: {

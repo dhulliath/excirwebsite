@@ -45,9 +45,9 @@ local_app.prototype.init = function (app) {
 
 			if (!code.honeypot && !code.error) {
 				let mailOptions = {
-					from: '"Info" <' + process.env.emailUsername + '>',
+					from: '<' + process.env.emailUsername + '>',
 					replyTo: '"' + req.body.name + '" <' + req.body.replyEmail + '>',
-					to: '"Excir Info" <' + process.env.emailUsername + '>',
+					to: '<' + getEmailDestination(req.body.formSubject) + '>',
 					subject: req.body.formSubject + ': ' + req.body.company,
 					text: 'company: ' + req.body.company + '\nphone number: ' + req.body.phoneNumber + '\n' + req.body.message
 				}
@@ -67,3 +67,13 @@ local_app.prototype.init = function (app) {
 }
 
 module.exports = new local_app()
+
+function getEmailDestination(subject) {
+	let target = enduro.cms_data.global.contact.correspond.email
+	for (key in target) {
+		if (target[key].subject == subject) {
+			return target[key].email_destination
+		}
+	}
+	return false
+}

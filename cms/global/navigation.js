@@ -1,8 +1,4 @@
 {
-	_notes: {
-		$note_type: 'title',
-		note: 'Whatever you do, don\'t delete the main group, or you\'ll fuck everything up. But if you do delete it, just remake it.'
-	},
 	_navigation: {
 		$_templates_hidden: true,
 		_templates: {

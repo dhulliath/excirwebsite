@@ -6,8 +6,8 @@
     <input id="formEmail" type="email" name="replyEmail" placeholder="Your Contact Email" >
     <input id="formPhonenumber" type="text" name="phoneNumber" placeholder="Your Phone Number" >
     <select name="formSubject" id="category">
-        {{#each categories}}
-        <option>{{caption}}</option>
+        {{#each global.contact.correspond.email}}
+        <option value="{{subject}}">{{subject}}</option>
         {{/each}}
     </select>
     <textarea id="formMessage" name="message" placeholder="What do you think?"></textarea>
