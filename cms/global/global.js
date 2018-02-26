@@ -28,7 +28,11 @@
 		}
 	},
 	keys: {
-		google_maps_embed_api: 'AIzaSyD-0Zh06uc_M12ac3zdTtUtSQu0Wy6U7DM'
+		google_maps_embed_api: 'AIzaSyD-0Zh06uc_M12ac3zdTtUtSQu0Wy6U7DM',
+		quandl: {
+			auth_token: '',
+			api_version: 3
+		}
 	},
 	$_hidden_hidden: true,
 	_hidden: {
