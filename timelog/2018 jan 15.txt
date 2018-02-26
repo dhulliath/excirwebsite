@@ -73,5 +73,10 @@
 2230 - stop
 3 hours
 
+26 February
+1300 - start
+1500 - stop
+2 hours
+
 ===
-38 hours 0 minutes
+40 hours 0 minutes
