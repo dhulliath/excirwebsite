@@ -19,12 +19,18 @@ function getGoldData() {
         if ((Date.now() - gold_data.lastrefresh) > update_time_threshold) {
             quandl.configure(enduro.cms_data.global.keys.quandl)
             quandl.dataset({source: enduro.cms_data.global.keys.quandl.database_code, table: enduro.cms_data.global.keys.quandl.dataset_code}, {order: 'desc', start_date: moment().subtract(1, 'week').format('YYYY-MM-DD'), end_date: moment().format('YYYY-MM-DD')}, (err, response) => {
-                gold_data.data = JSON.parse(response).dataset.data
+                let results = JSON.parse(response).dataset.data
+                gold_data.data = {}
+                for (key in results) {
+                    if (!gold_data.data[results[key][0]]) gold_data.data[results[key][0]] = {}
+                    gold_data.data[results[key][0]]['CAD'] = results[key][1]
+                }
+                 
                 gold_data.lastrefresh = Date.now()
-                resolve(gold_data)
+                resolve(gold_data.data)
             })
         } else {
-            resolve(gold_data)
+            resolve(gold_data.data)
         }
     })
 }
