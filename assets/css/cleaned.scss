@@ -1,0 +1,53 @@
+@import 'variables';
+@import 'modules/mediaqueries';
+@import 'modules/typing';
+@import 'modules/effects';
+@import 'modules/embeds';
+@import 'modules/navigation_main';
+@import 'components/*';
+@import 'pages/*';
+body {
+    background-color: $color-background;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: $color-text;
+    margin: 0;
+    padding-top: 1.25em;
+    header,
+    main,
+    footer {
+        margin: auto;
+        max-width: $view-tablet-threshold;
+    }
+    >header {
+        max-width: $view-tablet-threshold;
+        margin-bottom: 0.25em;
+        float:left;
+        @include viewPhone() {
+            display: none;
+        }
+        &.regular {
+            .image * {
+                max-width: $view-mobile-threshold;
+                margin: auto;
+            }
+        }
+        
+    }
+    nav {
+        float:right;
+        width: calc(100% - 400px);
+        vertical-align: top;
+    }
+    main {
+        clear: both;
+    }
+}
+
+a {
+    color: $color-text;
+    &:hover,
+    &:active {
+        color: lighten($color-text, 20%);
+    }
+}

@@ -51,7 +51,7 @@ body {
 }
 
 main {
-	max-width: $view-tablet-threshold;
+	//max-width: $view-tablet-threshold;
 	margin: auto;
 }
 
@@ -64,19 +64,21 @@ header {
 
 .excirLogo {
 	margin: auto;
-	max-width: $view-mobile-threshold;
+	max-width: 400px;
 	user-select: none;
+	
 }
 
 footer {
 	clear: both;
-	margin-top: 45px;
+	margin: 2.5em auto;
 	padding-top: 1.25em;
-	@extend .font-anton;
 	color: $color-trim;
 	text-align: center;
 	border-top: 1px solid $color-trim;
 	position: relative;
+	
+	max-width: $view-tablet-threshold;
 	&:after {
 		position: absolute;
 		top: 0px;
@@ -97,5 +99,6 @@ article {
 	margin: auto;
 	padding-top: #{$nav-item-height};
 	width: 100%;
+	//max-width: 90%;
 	max-width: $view-tablet-threshold;
 }

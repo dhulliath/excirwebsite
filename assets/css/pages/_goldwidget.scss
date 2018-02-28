@@ -1,0 +1,10 @@
+.goldwidget {
+    display: none;
+    
+    &:before {
+        content: 'Current price of Gold: CAD$';
+    }
+    &:after {
+        content: '/oz';
+    }
+}

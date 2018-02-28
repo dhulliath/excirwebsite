@@ -1,5 +1,6 @@
 const Quandl = require('quandl')
 const moment = require('moment')
+const _ = require('lodash')
 
 const local_app = function () {}
 

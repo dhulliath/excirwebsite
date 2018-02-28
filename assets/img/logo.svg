@@ -2,43 +2,43 @@
   <defs>
     <linearGradient id="treeGradient" x1="100%" y1="100%">
       <stop offset="0%" stop-color="orange">
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="orange;gold;orange" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="orange;#B38322;orange" />
       </stop>
       <stop offset="100%" stop-color="#ffaf1a">
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#ffaf1a;gold;#ffaf1a" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#ffaf1a;#B38322;#ffaf1a" />
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
       </stop>
     </linearGradient>
     <linearGradient id="leafGradient" x1="100%" y1="100%">
       <stop offset="0%" stop-color="#cc0">
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#cccc00;gold;#cccc00" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#cccc00;#B38322;#cccc00" />
       </stop>
-      <stop offset="100%" stop-color="gold">
+      <stop offset="100%" stop-color="#B38322">
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="gold;#bbbb00;gold" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#B38322;#bbbb00;#B38322" />
       </stop>
     </linearGradient>
     <linearGradient id="braceLeftGradient" x1="0%" y1="0%">
-      <stop offset="0%" stop-color="gold">
+      <stop offset="0%" stop-color="#B38322">
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0;0.20;0.40;0.60;0.80;0.95;0.80;0.60;0.40;0.20;0"
         />
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="gold;orange;gold" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#B38322;orange;#B38322" />
       </stop>
       <stop offset="100%" stop-color="#ffaf1a" />
     </linearGradient>
     <linearGradient id="braceRightGradient" x1="0%" y1="0%">
       <stop offset="0%" stop-color="#ffaf1a" />
-      <stop offset="100%" stop-color="gold">
+      <stop offset="100%" stop-color="#B38322">
         <animate attributeName="offset" dur="14s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
-        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="gold;orange;gold" />
+        <animate attributeName="stop-color" dur="14s" repeatCount="indefinite" values="#B38322;orange;#B38322" />
       </stop>
     </linearGradient>
-    <radialGradient id="goldStroke">
+    <radialGradient id="#B38322Stroke">
       <stop offset="0%" stop-color="orange" />
-      <stop offset="100%" stop-color="gold">
+      <stop offset="100%" stop-color="#B38322">
         <animate attributeName="offset" dur="20s" repeatCount="indefinite" values="0.95;0.80;0.60;0.40;0.20;0;0.20;0.40;0.60;0.80;0.95"
         />
       </stop>
@@ -64,31 +64,31 @@
 
     .logoText,
     .tree {
-      fill: url(#treeGradient)
+      fill: #B38322
     }
 
     .tree.accent {
       stroke: none;
-      fill: orange
+      fill: #B38322
     }
 
     .brace,
     .leaf,
     .logoText,
     .tree {
-      stroke: url(#goldStroke)
+      stroke: #B38322;
     }
 
     .brace.left {
-      fill: url(#braceLeftGradient)
+      fill: #B38322;
     }
 
     .brace.right {
-      fill: url(#braceRightGradient)
+      fill: #B38322;
     }
 
     .leaf {
-      fill: url(#leafGradient);
+      fill: #B38322;
       animation-name: leafWind;
       transform-origin: center;
       animation-iteration-count: infinite
@@ -117,7 +117,7 @@
     }
 
     .logoText {
-      font-size: 14px;
+      font-size: 12px;
       font-weight: normal;
       font-family: "Times New Roman", Georgia, Serif;
     }
@@ -127,17 +127,17 @@
         stroke-width: 0.7px;
       }
       .logoText {
-        font-size: 20px
+        font-size: 14px
       }
     }
   </style>
   <g id="excirlogo">
   <text class="logoText left" x="73" y="33" text-anchor="end">EXCIR</text>
   <text class="logoText right" x="121" y="33" text-anchor="start">WORKS</text>
-  <path d="M32.81 48.39c-3.453-.396-7.059-1.1-11.956-2.336-6.547-1.652-10.378-2.241-14.546-2.238-2.657.002-4.407.307-5.605.976-.804.45-.81.45-.552.051.434-.67 1.89-1.54 3.345-1.997 2.103-.66 4.347-.9 7.268-.776 2.981.126 4.264.336 10.18 1.67 6.56 1.478 10.722 2.317 13.827 2.79 2.455.373 3.419.423 8.17.423 6.012 0 8.469-.271 13.065-1.439.295-.075.494-.053.494.055 0 .261-4.073 1.551-6.285 1.991-3.593.715-5.934.938-10.595 1.012-3.226.051-5.239-.003-6.81-.183z"
-    class="brace left" />
-  <path d="M151.855 48.538c-1.732-.126-5.558-.642-7.183-.969-2.11-.424-6.285-1.751-6.285-1.998 0-.11.197-.132.494-.057 4.596 1.168 7.053 1.439 13.064 1.439 4.752 0 5.716-.05 8.17-.423 3.106-.473 7.267-1.312 13.828-2.79 5.916-1.334 7.199-1.544 10.18-1.67 2.921-.124 5.165.115 7.268.776 1.455.457 2.91 1.326 3.345 1.997.258.4.252.399-.552-.05-1.198-.67-2.948-.975-5.605-.977-4.168-.003-7.999.586-14.546 2.238-7.788 1.965-12.403 2.623-18.047 2.573-1.828-.017-3.686-.056-4.13-.089z"
-    class="brace right" />
+  <!--<path d="M32.81 48.39c-3.453-.396-7.059-1.1-11.956-2.336-6.547-1.652-10.378-2.241-14.546-2.238-2.657.002-4.407.307-5.605.976-.804.45-.81.45-.552.051.434-.67 1.89-1.54 3.345-1.997 2.103-.66 4.347-.9 7.268-.776 2.981.126 4.264.336 10.18 1.67 6.56 1.478 10.722 2.317 13.827 2.79 2.455.373 3.419.423 8.17.423 6.012 0 8.469-.271 13.065-1.439.295-.075.494-.053.494.055 0 .261-4.073 1.551-6.285 1.991-3.593.715-5.934.938-10.595 1.012-3.226.051-5.239-.003-6.81-.183z"
+    class="brace " />-->
+  <!--<path d="M151.855 48.538c-1.732-.126-5.558-.642-7.183-.969-2.11-.424-6.285-1.751-6.285-1.998 0-.11.197-.132.494-.057 4.596 1.168 7.053 1.439 13.064 1.439 4.752 0 5.716-.05 8.17-.423 3.106-.473 7.267-1.312 13.828-2.79 5.916-1.334 7.199-1.544 10.18-1.67 2.921-.124 5.165.115 7.268.776 1.455.457 2.91 1.326 3.345 1.997.258.4.252.399-.552-.05-1.198-.67-2.948-.975-5.605-.977-4.168-.003-7.999.586-14.546 2.238-7.788 1.965-12.403 2.623-18.047 2.573-1.828-.017-3.686-.056-4.13-.089z"
+    class="brace " />-->
   <path d="M67.095 47.475c-2.25-.326-4.853-.986-8.26-2.093l-2.784-.904-1.526.218c-3.797.542-6.05.728-8.835.73-6.705.003-13.68-.997-18.91-2.712-1.9-.623-3.755-1.425-2.694-1.164 3.214.789 9.345 1.765 13.17 2.097 3.396.294 10.673.109 13.138-.335 1.66-.299 1.832-.363 1.437-.535-4.309-1.873-6.053-2.373-8.733-2.506-1.708-.085-2.18-.044-3.248.28-.688.209-1.465.549-1.728.756-.597.47-.609.266-.033-.582.885-1.3 3.349-2.074 5.93-1.86 3.012.25 5.902 1.008 9.771 2.562l2.05.823 1.991-.575c1.095-.317 3.688-1.267 5.762-2.11 2.074-.845 4.943-1.951 6.375-2.458 2.553-.905 2.644-.923 4.67-.925 1.886-.003 2.15.04 3.052.485 1.45.716 2.249 1.457 2.817 2.614.977 1.99.463 4.618-1.167 5.97-.864.715-2.349 1.15-3.428 1.004-1.007-.136-2.693-.96-3.02-1.475l-.239-.377 1.037.35c.766.258 1.382.333 2.357.283 1.258-.063 1.348-.097 1.93-.733.547-.597.61-.774.61-1.701 0-1.648-.79-2.69-2.411-3.188-1.942-.596-3.334-.343-8.867 1.614-2.34.828-5.137 1.78-6.215 2.115l-1.961.61 1.422.593c3.177 1.325 6.63 2.261 9.952 2.697.84.11 1.728.248 1.975.306l.45.105-.45.136c-.712.216-3.526.156-5.387-.115z"
     class="brace left" />
   <path d="M122.405 47.59l-.45-.136.45-.105c.247-.058 1.136-.196 1.975-.306 3.322-.436 6.775-1.372 9.952-2.697l1.422-.594-1.96-.61c-1.08-.335-3.876-1.286-6.216-2.114-5.533-1.957-6.925-2.21-8.867-1.614-1.621.498-2.41 1.54-2.411 3.188 0 .927.063 1.104.61 1.701.582.636.672.67 1.93.733.975.05 1.591-.025 2.357-.283l1.037-.35-.24.377c-.326.516-2.012 1.339-3.019 1.475-3.595.486-6.267-3.57-4.595-6.974.568-1.157 1.366-1.898 2.817-2.614.903-.446 1.166-.488 3.053-.485 2.025.002 2.116.02 4.669.925 1.432.507 4.3 1.613 6.375 2.457 2.074.844 4.667 1.794 5.762 2.11l1.991.576 2.05-.823c3.869-1.554 6.759-2.311 9.77-2.561 2.582-.215 5.046.558 5.93 1.86.577.847.565 1.05-.032.58-.263-.206-1.04-.546-1.728-.755-1.068-.324-1.54-.365-3.248-.28-2.68.133-4.424.633-8.733 2.506-.395.172-.222.236 1.437.535 2.465.444 9.742.63 13.138.335 3.825-.332 9.956-1.308 13.17-2.097 1.061-.26-.793.541-2.694 1.164-5.23 1.715-12.205 2.715-18.91 2.712-2.79-.002-5.07-.19-8.835-.731l-1.526-.22-2.551.837c-3.477 1.14-6.246 1.834-8.646 2.169-2.1.293-4.464.342-5.234.11z"

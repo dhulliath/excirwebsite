@@ -2,7 +2,7 @@
 	_page: {
 		title: '',
 		styling: {
-			theme: '@@global.styling.page_styles.landing'
+			theme: '@@global.styling.page_styles.standard'
 		},
 		nav: {
 			label: 'Landing',
@@ -27,7 +27,23 @@
 			style: {
 				position: '@@global.styling.position_styles.center',
 				size: '@@global.styling.size_styles.fluid',
-                border: '@@global.styling.border_styles.none'
+				border: '@@global.styling.border_styles.none'
+			}
+		},
+		{
+			spacer: '3em'
+		},
+		{
+			$image_type: 'title',
+			$href_size: 4,
+			image: 'Image with Styling',
+			$href_type: 'image',
+			href: '/remote/direct_uploads/1519854788_Picture2.png',
+			$style_size: 8,
+			style: {
+				position: '@@global.styling.position_styles.center',
+				size: '@@global.styling.size_styles.fluid',
+				border: '@@global.styling.border_styles.none'
 			}
 		}
 	],

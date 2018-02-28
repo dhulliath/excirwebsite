@@ -2,10 +2,10 @@
 	_page: {
 		title: 'Testing design choices here',
 		styling: {
-			theme: '@@global.styling.page_styles.standard'
+			theme: '@@global.styling.page_styles.clean'
 		},
 		nav: {
-			label: '_TEST',
+			label: '_testing',
 			location: '@@global._navigation.navgroupitems.main',
 			weight: '999999',
 			$label_size: 6,

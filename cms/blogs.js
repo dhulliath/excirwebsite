@@ -6,7 +6,7 @@
 		},
 		nav: {
 			label: 'Blog',
-			location: '@@global._navigation.navgroupitems.main',
+			location: '@@global._navigation.navgroupitems.none',
 			weight: '2',
 			$label_size: 6,
 			$location_size: 6,

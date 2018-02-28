@@ -33,6 +33,17 @@
 						javascript: 'https://www.google.com/recaptcha/api.js'
 					}
 				]
+			},
+			clean: {
+				$stylesheets_templatitator: '@@global.styling._templates.csstemplate',
+				stylesheets: [
+					{
+						src: '/assets/css/cleaned.css'
+					},
+					{
+						javascript: 'https://www.google.com/recaptcha/api.js'
+					}
+				]
 			}
 		},
 		border_styles: {

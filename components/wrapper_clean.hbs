@@ -6,21 +6,35 @@
     {{#if _page.styling.theme.stylesheets}} {{#each _page.styling.theme.stylesheets}} {{#if src}}
     <link rel="stylesheet" href="{{src}}">{{/if}} {{#if cascadingstylesheet}}
     <link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}} {{/each}} {{else}} {{#each global.styling.page_styles.standard.stylesheets}} {{#if src}}
-    <link rel="stylesheet"
-        href="{{src}}">{{/if}} {{#if cascadingstylesheet}}
-    <link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}} {{/each}} {{/if}}
-    {{>seo}}
+    <link rel="stylesheet" href="{{src}}">{{/if}} {{#if cascadingstylesheet}}
+    <link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}} {{/each}} {{/if}} {{>seo}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
 </head>
 
-<body>
+<body style="padding-top:100px;">
     
-    <div class="excirLogo">
-        <a href="/">
+    <div class="bosstop" style="position: relative;">
+        <a href="/" style="display:block; position: absolute; left:0;width:50%;">
             <img src="{{global.site.image.src}}" width="100%">
         </a>
+        <div style="display:block; position:absolute;right:0;width:50%;">
+            {{#if _page.title}}{{_page.title}}{{/if}}{{#if _blog.title}}{{_blog.title}}{{/if}}
+        </div>
     </div>
+    <!--<header class="regular">
+        <a class="image" href="/">
+            <img src="{{global.site.image.src}}" width="100%">
+        </a> {{#if _page.title}}
+        <div class="lineAround">
+            {{_page.title}}
+        </div>
+        {{/if}} {{#if _blog.title}}
+        <div class="lineAround">
+            {{_blog.title}}
+        </div>
+        {{/if}}
+    </header>-->
     <nav>
         <div>
             <label for="drop" class="toggle">&#9776; {{#if _page.title}}{{_page.title}}{{else}}Menu{{/if}} </label>
@@ -47,30 +61,19 @@
             {{/navlist}}
         </div>
     </nav>
+    <header>
+
+    </header>
     <main>
+        <div class="goldwidget"></div>
 
         <article>
-            <div class="goldwidget"></div>
-            <header>
-                {{#if _page.title}}
-                <div class="lineAround">
-                    {{_page.title}}
-                </div>
-                {{/if}} {{#if _blog.title}}
-                <div class="lineAround">
-                    {{_blog.title}}
-                </div>
-                {{/if}}
-            </header>
-            <section>
-                {{>@partial-block}} {{>_sections}}
-            </section>
+            {{>@partial-block}} {{>_sections}}
         </article>
-        <footer>
-            {{{marked global.site.footer}}}
-        </footer>
     </main>
-
+    <footer>
+        {{{marked global.site.footer}}}
+    </footer>
 </body>
 <script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
 {{#if _page.styling.theme.stylesheets}} {{#each _page.styling.theme.stylesheets}} {{#if javascript}}

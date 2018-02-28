@@ -23,7 +23,7 @@
 			$img_size: 4,
 			img: {
 				$image_type: 'image',
-				image: '/remote/direct_uploads/1517517282_whitemuppet7_Slide.jpg'
+				image: '/remote/direct_uploads/1519851463_FullSizeRender-5.jpg'
 			},
 			$txt_size: 8,
 			txt: {
@@ -39,7 +39,7 @@
 			$img_size: 4,
 			img: {
 				$image_type: 'image',
-				image: '/remote/direct_uploads/1517517284_whitemuppet6_Slide.jpg'
+				image: '/remote/direct_uploads/1519851432_FullSizeRender-2.jpg'
 			},
 			$txt_size: 8,
 			txt: {
@@ -55,7 +55,7 @@
 			$img_size: 4,
 			img: {
 				$image_type: 'image',
-				image: '/remote/direct_uploads/1517517287_gonzo-is-great.jpg'
+				image: '/remote/direct_uploads/1519851442_FullSizeRender-3.jpg'
 			},
 			$txt_size: 8,
 			txt: {
@@ -71,7 +71,7 @@
 			$img_size: 4,
 			img: {
 				$image_type: 'image',
-				image: '/remote/direct_uploads/1517517295_alistarcookie.jpg'
+				image: '/remote/direct_uploads/1519851451_FullSizeRender-4.jpg'
 			},
 			$txt_size: 8,
 			txt: {
@@ -87,7 +87,7 @@
 			$img_size: 4,
 			img: {
 				$image_type: 'image',
-				image: '/remote/direct_uploads/1517517291_40ce75840b4af074360be34d5efe7b55--marionette-amigurumi.jpg'
+				image: '/remote/direct_uploads/1519851458_FullSizeRender.jpg'
 			},
 			$txt_size: 8,
 			txt: {

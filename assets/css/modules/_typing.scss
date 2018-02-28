@@ -21,7 +21,7 @@
 }
 
 nav {
-    @extend .font-anton;
+    @extend .font-merriweather;
     font-size: 1.15em;
 }
 
@@ -41,6 +41,10 @@ header {
     font-size: 2em;
     @extend .font-merriweather;
     color: $color-accent;
+}
+
+footer {
+    @extend .font-libre-franklin;
 }
 
 h1,

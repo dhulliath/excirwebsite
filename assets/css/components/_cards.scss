@@ -1,6 +1,7 @@
 $card-border-radius: 0.5em;
 .card {
-    width: calc(50% - 2em);
+    width: calc(33% - 2em);
+    @include viewTablet() {width: calc(50% - 2em);}
     @include viewPhone() {
         width: calc(100% - 2em);
     }

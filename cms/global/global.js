@@ -17,7 +17,7 @@
 	site: {
 		title: 'Excir Works',
 		image: '@@global._hidden.logo_images.vector',
-		footer: 'The most effective and environmentally - friendly method for recycling and refining of gold, palladium and platinum.\n\nWebsite under Construction',
+		footer: 'Website under Construction',
 		$footer_type: 'textarea'
 	},
 	seo: {
