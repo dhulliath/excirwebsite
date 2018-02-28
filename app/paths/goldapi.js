@@ -21,9 +21,11 @@ function getGoldData() {
             quandl.dataset({source: enduro.cms_data.global.keys.quandl.database_code, table: enduro.cms_data.global.keys.quandl.dataset_code}, {order: 'desc', start_date: moment().subtract(1, 'week').format('YYYY-MM-DD'), end_date: moment().format('YYYY-MM-DD')}, (err, response) => {
                 gold_data.data = JSON.parse(response).dataset.data
                 gold_data.lastrefresh = Date.now()
+                resolve(gold_data)
             })
+        } else {
+            resolve(gold_data)
         }
-        resolve(gold_data);
     })
 }
 
