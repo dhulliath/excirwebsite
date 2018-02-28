@@ -6,6 +6,12 @@
 				subject: '',
 				email_destination: ''
 			}
+		},
+		gold_queries: {
+			quandl: {
+				database: '',
+				dataset: ''
+			}
 		}
 	},
 	site: {

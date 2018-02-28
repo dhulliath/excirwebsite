@@ -20,10 +20,15 @@ function getGoldData() {
             quandl.configure(enduro.cms_data.global.keys.quandl)
             quandl.dataset({source: enduro.cms_data.global.keys.quandl.database_code, table: enduro.cms_data.global.keys.quandl.dataset_code}, {order: 'desc', start_date: moment().subtract(1, 'week').format('YYYY-MM-DD'), end_date: moment().format('YYYY-MM-DD')}, (err, response) => {
                 let results = JSON.parse(response).dataset.data
+                let index = 0;
                 gold_data.data = {}
                 for (key in results) {
-                    if (!gold_data.data[results[key][0]]) gold_data.data[results[key][0]] = {}
-                    gold_data.data[results[key][0]]['CAD'] = results[key][1]
+                    if (!gold_data.data[index]) gold_data.data[index] = {}
+                    gold_data.data[index] = {
+                        date: results[key][0],
+                        CAD: results[key][1]
+                    }
+                    index++;
                 }
                  
                 gold_data.lastrefresh = Date.now()
