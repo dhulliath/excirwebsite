@@ -78,5 +78,9 @@
 1500 - stop
 2 hours
 
+28 February
+1400 - start live editing
+1530 - stop 
+
 ===
 40 hours 0 minutes
