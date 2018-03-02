@@ -18,6 +18,7 @@
     "deepmerge": "^2.0.1",
     "dom-parser": "^0.1.5",
     "enduro": "1.4.42",
+    "fixer-api": "^1.2.6",
     "lodash": "^4.17.4",
     "marked": "^0.3.12",
     "moment": "^2.20.1",
