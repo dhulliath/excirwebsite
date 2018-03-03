@@ -1,7 +1,10 @@
 @import 'variables';
 @import 'modules/typing';
-
 $nav-item-height: 50px;
+* {
+    box-sizing: border-box;
+    outline: 1px solid rgba($color-accent, 0.5);
+}
 
 nav.test1 {
     display: flex;
@@ -19,16 +22,103 @@ nav.test1 {
             font-weight: normal;
             font-family: "Times New Roman", Georgia, Serif;
         }
+        .burger {
+            //visibility: hidden;
+            cursor: pointer;
+            display: none;
+            height: 3.25rem;
+            position: relative;
+            width: 3.25rem;
+            margin-left: auto;
+            span {
+                background-color: currentColor;
+                display: block;
+                height: 1px;
+                left: calc(50% - 8px);
+                position: absolute;
+                -webkit-transform-origin: center;
+                transform-origin: center;
+                -webkit-transition-duration: 86ms;
+                transition-duration: 86ms;
+                -webkit-transition-property: background-color, opacity, -webkit-transform;
+                transition-property: background-color, opacity, -webkit-transform;
+                transition-property: background-color, opacity, transform;
+                transition-property: background-color, opacity, transform, -webkit-transform;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+                width: 16px;
+                &:nth-child(1) {
+                    top: calc(50% - 6px);
+                }
+                &:nth-child(2) {
+                    top: calc(50% - 1px);
+                }
+                &:nth-child(3) {
+                    top: calc(50% + 4px);
+                }
+            }
+        }
     }
     .menu {
         display: flex;
         flex-shrink: 0;
         flex-grow: 1;
         align-items: stretch;
-        a {
-            @extend .font-merriweather;
-            font-size: 1em;
-            padding: 8px 16px;
+        position: relative;
+        .start,
+        .end {
+            .item {
+                @extend .font-merriweather;
+                font-size: 1em;
+                padding: 0.5em 1em;
+                border-width: 0px; //border-bottom-width: 0px;
+                border-style: solid;
+                border-color: $color-accent;
+                transition: border-bottom-width 0.25s;
+                &:hover {
+                    border-bottom-width: 2px;
+                    &.is-hoverable .dropdown {
+                        display: block;
+                    }
+                    &.no-highlight {
+                        border-bottom-width: 0px;
+                    }
+                }
+                &.has-dropdown {
+                    -webkit-box-align: stretch;
+                    -ms-flex-align: stretch;
+                    align-items: stretch;
+                }
+            }
+            .dropdown {
+                background-color: white;
+                display: none;
+                font-size: 0.875rem;
+                left: 0;
+                min-width: 100%;
+                position: absolute;
+                top: 100%;
+                z-index: 20;
+                .item {
+                    position: relative;
+                    padding: 0.375rem 1rem;
+                    padding-right: 1rem;
+                    white-space: nowrap;
+                    display: flex;
+                    align-items: center;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-flex: 0;
+-ms-flex-positive: 0;
+flex-grow: 0;
+-ms-flex-negative: 0;
+flex-shrink: 0;
+                }
+            }
         }
         .start {
             display: flex;

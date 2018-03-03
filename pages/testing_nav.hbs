@@ -1,25 +1,46 @@
 <link rel="stylesheet" href="/assets/css/navigation_betas.css" />
 <nav class="test1">
     <div class="logo">
-        <svg  viewBox="0 0 194.887 49">
+        <svg viewBox="0 0 194.887 49">
             <use xlink:href="/assets/img/logo.svg#excirlogo" />
         </svg>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
     <div class="menu">
         <div class="start">
-
+            <a class="item">
+                hi
+            </a>
         </div>
         <div class="end">
-        {{#navlist 'main'}}
-        {{#each this}}
-            <a>
+            <a class="item">
+                placeholder
+            </a>
+            {{#navlist 'main'}} {{#each this}} {{#if subgroup}}
+            <div class="item has-dropdown is-hoverable">
+                <a class="link">
+                    {{label}}
+                </a>
+                <div class="dropdown">
+                    {{#navlist subgroup}} {{#each this}}
+                    <a class="item">
+                        {{label}}
+                    </a>
+                    {{/each}} {{/navlist}}
+                </div>
+            </div>
+            {{else}}
+            <a class="item">
                 {{label}}
             </a>
-        {{/each}}
-        {{/navlist}}
-        <span>
-        PRICE OF STUFF
-    </span>
+            {{/if}} {{/each}} {{/navlist}}
+            <div class="item no-highlight">
+                PRICE OF STUFF
+            </div>
         </div>
     </div>
 </nav>
