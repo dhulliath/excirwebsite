@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/assets/css/navigation_betas.css" />
+<nav class="test1">
+    <div class="logo">
+        <svg  viewBox="0 0 194.887 49">
+            <use xlink:href="/assets/img/logo.svg#excirlogo" />
+        </svg>
+    </div>
+    <div class="menu">
+        <div class="start">
+
+        </div>
+        <div class="end">
+        {{#navlist 'main'}}
+        {{#each this}}
+            <a>
+                {{label}}
+            </a>
+        {{/each}}
+        {{/navlist}}
+        <span>
+        PRICE OF STUFF
+    </span>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'modules/typing';
+
+$nav-item-height: 50px;
+
+nav.test1 {
+    display: flex;
+    align-items: stretch;
+    height: $nav-item-height;
+    .logo {
+        display: flex;
+        flex-shrink: 0;
+        align-items: stretch;
+        svg {
+            height: $nav-item-height;
+            fill: $color-accent;
+            stroke: none;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: "Times New Roman", Georgia, Serif;
+        }
+    }
+    .menu {
+        display: flex;
+        flex-shrink: 0;
+        flex-grow: 1;
+        align-items: stretch;
+        a {
+            @extend .font-merriweather;
+            font-size: 1em;
+            padding: 8px 16px;
+        }
+        .start {
+            display: flex;
+            justify-content: flex-start;
+            margin-right: auto;
+        }
+        .end {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+    }
+}

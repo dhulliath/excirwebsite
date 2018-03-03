@@ -1,4 +1,5 @@
 //scraper for kito.com, hopefully they never change their table ID's.
+//uses fixer.io to covert USD to CAD
 
 const DomParser = require('dom-parser')
 const rp = require('request-promise')
@@ -15,6 +16,8 @@ var lookup_elements = {
     'platinum': 'PT',
     'palladium': 'PD'
 }
+
+var target_currency = 'CAD'
 
 var prices = {}
 var fixer_data = {}
@@ -47,7 +50,7 @@ module.exports.getPrices = function () {
             module.exports.updateCurrency().then(() => {
                 module.exports.updatePrices().then(() => {
                     for (key in prices) {
-                        prices[key].CAD = round(prices[key].USD * fixer_data.rates.CAD / fixer_data.rates.USD, 2)
+                        prices[key][target_currency] = round(prices[key].USD * fixer_data.rates[target_currency] / fixer_data.rates.USD, 2)
                     }
                     resolve(prices)
                 })
