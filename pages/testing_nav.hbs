@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="/assets/css/navigation_betas.css" />
-<nav class="test1">
+<nav class="test1 fix-to-top">
     <div class="logo">
         <svg viewBox="0 0 194.887 49">
             <use xlink:href="/assets/img/logo.svg#excirlogo" />
@@ -12,14 +12,8 @@
     </div>
     <div class="menu">
         <div class="start">
-            <a class="item">
-                hi
-            </a>
         </div>
         <div class="end">
-            <a class="item">
-                placeholder
-            </a>
             {{#navlist 'main'}} {{#each this}} {{#if subgroup}}
             <div class="item has-dropdown is-hoverable">
                 <a class="link">
@@ -39,8 +33,12 @@
             </a>
             {{/if}} {{/each}} {{/navlist}}
             <div class="item no-highlight">
-                PRICE OF STUFF
+                <svg class="goldWidget" viewBox="0 0 75 50" height="50px">
+                    <text>Gold</text>
+                </svg>
             </div>
         </div>
     </div>
 </nav>
+
+<script data-main="/assets/js/main.js" src="/assets/js/require.js"></script>
