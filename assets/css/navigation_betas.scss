@@ -1,8 +1,10 @@
 @import 'variables';
+@import 'modules/mediaqueries';
 @import 'modules/typing';
 $nav-item-height: 60px;
 $nav-item-padding-v: 8px;
 $nav-item-padding-h: 16px;
+@import 'components/goldWidget';
 /*
 * {
     box-sizing: border-box;
@@ -40,7 +42,9 @@ nav.test1 {
             font-family: "Times New Roman", Georgia, Serif;
         }
         .burger {
-            //visibility: hidden;
+            @include viewTablet() {
+                display: block;
+            } //visibility: hidden;
             cursor: pointer;
             display: none;
             height: 3.25rem;
@@ -82,88 +86,84 @@ nav.test1 {
         flex-grow: 1;
         align-items: stretch;
         position: relative;
-        .start,
-        .end {
-            .item {
-                @extend .font-merriweather;
-                font-size: 1em;
-                padding: $nav-item-padding-v $nav-item-padding-h;
-                line-height: #{$nav-item-height - (2 * $nav-item-padding-v)};
-                border-width: 0px; //border-bottom-width: 0px;
-                border-style: solid;
-                border-color: $color-accent;
-                transition: border-bottom-width 0.25s;
-                &:hover {
-                    border-bottom-width: 2px;
-                    &.is-hoverable .dropdown {
-                        display: block;
-                    }
-                    &.no-highlight {
-                        border-bottom-width: 0px;
-                    }
-                }
-                &.has-dropdown {
-                    -webkit-box-align: stretch;
-                    -ms-flex-align: stretch;
-                    align-items: stretch;
-                    &:after {
-                        content: '+';
-                    }
-                    /*.link:after {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        //left: 50%;
-                        width: 0;
-                        height: 0;
-                        border: 20px solid transparent;
-                        border-top-color: #00aabb;
-                        border-bottom: 0;
-                        margin-left: -20px;
-                        margin-bottom: -20px;
-                    }*/
-                }
+        @include viewTablet() {
+            display: none;
+            &.is-active {
+                display: block;
             }
-            .dropdown {
-                background-color: $color-background;
-                display: none;
-                font-size: 0.875rem; //left: 0px;
-                //min-width: 100%;
-                position: absolute;
-                top: 100%;
-                z-index: 20;
-                //border-left: solid 2px $color-accent;
-                .item {
-                    position: relative;
-                    padding: 0.375rem 1rem;
-                    padding-right: 1rem;
-                    white-space: nowrap;
-                    display: flex;
-                    align-items: center;
-                    -webkit-box-align: center;
-                    -ms-flex-align: center;
-                    align-items: center;
-                    display: -webkit-box;
-                    display: -ms-flexbox;
-                    display: flex;
-                    -webkit-box-flex: 0;
-                    -ms-flex-positive: 0;
-                    flex-grow: 0;
-                    -ms-flex-negative: 0;
-                    flex-shrink: 0;
-                }
-            }
-        }
-        .start {
-            display: flex;
-            justify-content: flex-start;
-            margin-right: auto;
-        }
-        .end {
-            display: flex;
-            justify-content: flex-end;
-            margin-left: auto;
         }
     }
-    
+    a {
+        color: $color-accent;
+        text-decoration: none;
+    }
+    .start,
+    .end,
+    .logo {
+        .item {
+            @extend .font-merriweather;
+            font-size: 1em;
+            padding: $nav-item-padding-v $nav-item-padding-h;
+            line-height: #{$nav-item-height - (2 * $nav-item-padding-v)};
+            border-width: 0px; //border-bottom-width: 0px;
+            border-style: solid;
+            border-color: $color-accent;
+            transition: border-bottom-width 0.25s;
+            &:hover {
+                border-bottom-width: 2px;
+                &.is-hoverable .dropdown {
+                    display: block;
+                }
+                &.no-highlight {
+                    border-bottom-width: 0px;
+                }
+            }
+            &.has-dropdown {
+                -webkit-box-align: stretch;
+                -ms-flex-align: stretch;
+                align-items: stretch;
+                &:after {
+                    content: '+';
+                }
+            }
+        }
+        .dropdown {
+            background-color: $color-background;
+            display: none;
+            font-size: 0.875rem; //left: 0px;
+            //min-width: 100%;
+            position: absolute;
+            top: 100%;
+            z-index: 20; //border-left: solid 2px $color-accent;
+            .item {
+                position: relative;
+                padding: 0.375rem 1rem;
+                padding-right: 1rem;
+                white-space: nowrap;
+                display: flex;
+                align-items: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-flex: 0;
+                -ms-flex-positive: 0;
+                flex-grow: 0;
+                -ms-flex-negative: 0;
+                flex-shrink: 0;
+            }
+        }
+    }
+    .start {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+    .end {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    } //}
 }
