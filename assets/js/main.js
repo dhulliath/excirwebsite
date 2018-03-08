@@ -21,8 +21,6 @@ require(['jquery'], function ($) {
 
 		$('nav .burger').click(function () {
 			$(this).parent().parent().toggleClass('is-active');
-			console.log('nav toggle');
-			console.log($(this).parent().parent());
 		})
 
 	})
