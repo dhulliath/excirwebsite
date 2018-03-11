@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}</title>
+    <title>{{global.site.title}}</title>
     {{#if _page.styling.theme.stylesheets}} {{#each _page.styling.theme.stylesheets}} {{#if src}}
     <link rel="stylesheet" href="{{src}}">{{/if}} {{#if cascadingstylesheet}}
     <link rel="stylesheet" href="{{cascadingstylesheet}}">{{/if}} {{/each}} {{else}} {{#each global.styling.page_styles.standard.stylesheets}} {{#if src}}
