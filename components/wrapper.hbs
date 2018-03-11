@@ -21,14 +21,7 @@
             <use xlink:href="/assets/img/logo.svg#excirlogo" />
         </svg>
         <div class="item no-highlight">
-            <svg class="goldWidget" viewBox="0 0 100 60">
-                <text x="0" y="10">Gold</text>
-                <text x="0" y="25">Platinum</text>
-                <text x="0" y="40">Palladium</text>
-                <text text-anchor="end" x="100" y="10" class="AU-Price"></text>
-                <text text-anchor="end" x="100" y="25" class="PT-Price"></text>
-                <text text-anchor="end" x="100" y="40" class="PD-Price"></text>
-            </svg>
+            
         </div>
         <div class="burger">
             <span></span>
@@ -62,7 +55,7 @@
     <main>
 
         <article>
-            <div class="goldwidget"></div>
+            
             <header>
                 {{#if _page.title}}
                 <div class="lineAround">
@@ -74,6 +67,10 @@
                 </div>
                 {{/if}}
             </header>
+            
+            <div class="goldWidget">
+
+            </div>
             <section>
                 {{>@partial-block}} {{>_sections}}
             </section>

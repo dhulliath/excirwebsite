@@ -1,0 +1,22 @@
+.newsLink {
+    clear: both;
+    margin-bottom: 2em;
+
+    a {
+        font-size: 1.25em;
+        display: block;
+        font-weight: bold;
+
+    }
+
+    .source, .date {
+        font-size: 0.8em;
+    }
+
+    .source {
+        //float: left;
+    }
+    .date {
+        //float: right;
+    }
+}

@@ -7,6 +7,7 @@ $nav-item-padding-h: 16px;
     left: 0;
     top: 0;
     right: 0;
+    z-index: 100;
 }
 
 nav {
@@ -138,10 +139,11 @@ nav {
             .item {
                 font-size: 1em;
                 padding: $nav-item-padding-v $nav-item-padding-h;
-                max-height: #{$nav-item-height - (2 * $nav-item-padding-v)};
+                max-height: $nav-item-height;
+                //max-height: #{$nav-item-height - (2 * $nav-item-padding-v)};
                 line-height: #{$nav-item-height - (2 * $nav-item-padding-v)};
                 transition: background-color 0.25s;
-                &:hover {
+                &:hover, &.is-active {
                     .link {
                         color: white;
                     }

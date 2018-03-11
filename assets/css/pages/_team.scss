@@ -1,0 +1,25 @@
+.teamMember {
+    margin-bottom: 2em;
+
+    .name, .title {
+        text-align: center;
+    }
+    .name {
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+    .title {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    .bio {
+
+    }
+    .image {
+        img {
+            max-height: 8em;
+        }
+        max-height: 8em;
+        float:left;
+    }
+}

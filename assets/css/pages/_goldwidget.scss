@@ -8,3 +8,21 @@
         content: '/oz';
     }
 }
+
+.goldWidget {
+    float:right;
+    color: $color-accent;
+    margin: 2px;
+    font-size: 0.8em;
+
+    div {
+        display: block;
+        :nth-child(1) {
+            float: left;
+        }
+        :nth-child(2) {
+            margin-left: 1em;
+            float: right;
+        }
+    }
+}

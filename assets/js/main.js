@@ -6,10 +6,10 @@ require.config({
 	},
 })
 require(['goldwidget'], function (gold) {
-	gold.makeGoldWidget({
-		'gold': '.AU-price',
-		'platinum': '.PT-price',
-		'palladium': '.PD-price'
+	gold.makeGoldWidget('.goldWidget', {
+		'gold': 'Gold',
+		'platinum': 'Platinum',
+		'palladium': 'Palladium'
 	});
 })
 require(['jquery'], function ($) {

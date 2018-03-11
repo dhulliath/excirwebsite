@@ -58,6 +58,33 @@
 {{/each}}
 {{/if}}
 
+{{#if team_member}}
+<div class="teamMember">
+    <div class="image"><img src="{{pics.image}}"></img></div>
+    <div class="name">{{bio.name}}</div>
+    <div class="title">{{bio.title}}</div>
+    <div class="bio">{{bio.biography}}</div>
+</div>
+{{/if}}
+
+{{#if big_link}}
+    <div class="biglink">
+        <a href="{{url}}">
+            {{#if image}}<img src="{{image}}">{{/if}}
+            <span>{{title}}</span>
+        </a>
+    </div>
+{{/if}}
+
+{{#if news_link}}
+    <div class="newsLink">
+        <a href="{{url}}">{{headline}}</a>
+        <div>{{summary}}</div>
+        <div class="source">{{source}}</div>
+        <div class="date">{{article_date}}</div>
+    </div>
+{{/if}}
+
 {{#if spacer}}
     <div style="height: {{spacer}}" ></div>
 {{/if}}
