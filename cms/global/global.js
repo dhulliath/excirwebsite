@@ -30,6 +30,7 @@
 	},
 	site: {
 		title: 'Excir Works',
+		$image_hidden: true,
 		image: '@@global._hidden.logo_images.vector',
 		footer: 'Website under Construction',
 		$footer_type: 'textarea'
@@ -38,7 +39,14 @@
 		description: 'The most effective and environmentally-friendly method for recycling and refining of gold, palladium and platinum.',
 		$description_type: 'textarea',
 		keywords: '',
-		url_base: 'https://excir.earlgraytease.com'
+		url_base: 'https://excir.earlgraytease.com',
+		share_image: '/assets/img/icon.png',
+		$share_image_type: 'image',
+		fav_icon: '/assets/img/favicon.ico',
+		$fav_icon_type: 'image',
+		facebook: {
+			app_id: ''
+		}
 	},
 	contact: {
 		$address_size: 6,

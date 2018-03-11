@@ -4,7 +4,7 @@
     "@type": "http://schema.org/Organization",
     "name": "{{global.site.title}}",
     "url": "{{global.seo.url_base}}",
-    "image": "{{global.seo.url_base}}/assets/img/icon.png",
+    "image": "{{global.seo.url_base}}{{global.seo.share_image}}",
     "address": {
         "@type": "http://schema.org/PostalAddress"{{#if global.contact.address.country}},
         "addressCountry": "{{global.contact.address.country}}"{{/if}}{{#if global.contact.address.region}},
@@ -17,16 +17,17 @@
     }
 }
 </script>
-<link rel="icon" type="image/ico" href="{{global.seo.url_base}}/assets/img/favicon.ico" />
+<link rel="icon" type="image/ico" href="{{global.seo.url_base}}{{global.seo.fav_icon}}" />
 <meta name="description" content="{{global.seo.description}}" />
 <meta name="keywords" content="{{global.seo.keywords}}" />
 <meta property="og:title" content="{{global.site.title}}{{#if _page.title}} - {{_page.title}}{{/if}}" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="{{global.seo.url_base}}/assets/img/icon.png" />
+<meta property="og:image" content="{{global.seo.url_base}}{{global.seo.share_image}}" />
 <meta property="og:image:width" content="256" />
 <meta property="og:image:height" content="256" />
 <meta property="og:description" content="{{global.seo.description}}" />
 <meta property="og:url" content="{{global.seo.url_base}}" />
+{{#if global.seo.facebook.app_id}}<meta property="fb:app_id" content="{{global.seo.facebook.app_id}}" /> {{/if}}
 <meta name="robots" content="noindex, nofollow" />
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114708590-1"></script>
