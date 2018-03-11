@@ -4,7 +4,7 @@
     "@type": "http://schema.org/Organization",
     "name": "{{global.site.title}}",
     "url": "{{global.seo.url_base}}",
-    "image": "{{global.seo.url_base}}{{global.site.image.src}}",
+    "image": "{{global.seo.url_base}}/assets/img/icon.png",
     "address": {
         "@type": "http://schema.org/PostalAddress"{{#if global.contact.address.country}},
         "addressCountry": "{{global.contact.address.country}}"{{/if}}{{#if global.contact.address.region}},
@@ -12,8 +12,8 @@
         "addressLocality": "{{global.contact.address.city}}"{{/if}}{{#if global.contact.address.postal_code}},
         "postalCode":"{{global.contact.address.postal_code}}"{{/if}},
         "streetAddress":"{{#if global.contact.address.unit}}{{global.contact.address.unit}}, {{/if}}{{global.contact.address.address}}"{{#if global.contact.correspond.phone}},
-        "telephone":"{{global.contact.correspond.phone}}"{{/if}}{{#if global.contact.correspond.email}},
-        "email":"{{global.contact.correspond.email}}"{{/if}}
+        "telephone":"{{global.contact.correspond.phone}}"{{/if}}{{#if global.contact.correspond.primaryemail}},
+        "email":"{{global.contact.correspond.primaryemail}}"{{/if}}
     }
 }
 </script>

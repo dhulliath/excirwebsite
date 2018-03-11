@@ -34,7 +34,7 @@
 			news_link: 'News Link',
 			headline: 'Researchers Discover Solution to Extract Gold from Electronic Waste',
 			url: 'https://www.azocleantech.com/news.aspx?newsID=23043',
-			source: 'AZO Cleantech',
+			source: 'AZo Cleantech',
 			summary: 'Stephen Foley, an associate professor in the Department of Chemistry at the University of Saskatchewan (U of S), and his team appear to possess the Midas touch when it comes to research on the extraction of gold.',
 			$summary_type: 'textarea',
 			article_date: 'Friday, 29 January, 2016',

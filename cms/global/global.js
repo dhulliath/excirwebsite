@@ -55,6 +55,7 @@
 			phone: '',
 			$email_templatitator: '@@global._contenttemplate.contact',
 			$email_size: 12,
+			primaryemail: 'info@excirworks.com',
 			email: [
 				{
 					subject: 'General Inquiry',
@@ -68,44 +69,7 @@
 		}
 	},
 	keys: {
-		google_maps_embed_api: 'AIzaSyD-0Zh06uc_M12ac3zdTtUtSQu0Wy6U7DM',
-		quandl: {
-			auth_token: 'kknHW49hyq86BMG7oSmM',
-			api_version: 3,
-			database_code: 'WGC',
-			dataset_code: 'GOLD_DAILY_CAD',
-			$queries_templatitator: '@@global._contenttemplate.gold_queries',
-			queries: [
-				{
-					name: 'gold',
-					currency: 'CAD',
-					unit: '@@global._contenttemplate.weight_units.oz',
-					database: 'WGC',
-					dataset: 'GOLD_DAILY_CAD'
-				},
-				{
-					name: 'platinum',
-					currency: 'USD',
-					unit: '@@global._contenttemplate.weight_units.troy_oz',
-					database: 'COM',
-					dataset: 'PL_EIB'
-				},
-				{
-					name: 'palladium',
-					currency: 'USD',
-					unit: '@@global._contenttemplate.weight_units.oz',
-					database: 'COM',
-					dataset: 'PA_EFP'
-				},
-				{
-					name: 'usdcad',
-					currency: 'USD',
-					unit: '@@global._contenttemplate.weight_units.not_applicable',
-					database: 'CURRFX',
-					dataset: 'USDCAD'
-				}
-			]
-		}
+		google_maps_embed_api: 'AIzaSyD-0Zh06uc_M12ac3zdTtUtSQu0Wy6U7DM'
 	},
 	$_hidden_hidden: true,
 	_hidden: {
