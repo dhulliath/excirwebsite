@@ -25,6 +25,7 @@ nav {
     }
     svg {
         fill: $color-accent;
+        
     }
     a {
         color: $color-accent;
@@ -132,6 +133,7 @@ nav {
             flex-grow: 1;
             align-items: stretch;
             position: relative;
+            max-height: $nav-item-height;
         }
         .start,
         .end,
@@ -139,7 +141,7 @@ nav {
             .item {
                 font-size: 1em;
                 padding: $nav-item-padding-v $nav-item-padding-h;
-                max-height: $nav-item-height;
+                
                 //max-height: #{$nav-item-height - (2 * $nav-item-padding-v)};
                 line-height: #{$nav-item-height - (2 * $nav-item-padding-v)};
                 transition: background-color 0.25s;

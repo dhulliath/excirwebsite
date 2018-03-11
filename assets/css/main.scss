@@ -70,16 +70,10 @@ header {
 	
 }
 
-footer {
-	clear: both;
-	margin: 2.5em auto;
-	padding-top: 1.25em;
-	color: $color-trim;
-	text-align: center;
-	border-top: 1px solid $color-trim;
+footer, section {
 	position: relative;
-	
-	max-width: $view-tablet-threshold;
+	padding-top: 1.25em;
+	border-top: 1px solid $color-trim;
 	&:after {
 		position: absolute;
 		top: 0px;
@@ -89,6 +83,17 @@ footer {
 		content: "";
 		border-top:1px solid $color-accent;
 	}
+}
+
+footer {
+	clear: both;
+	margin: 2.5em auto;
+	
+	color: $color-trim;
+	text-align: center;
+	
+	max-width: $view-tablet-threshold;
+	
 	img {
 		user-select: none;
 	}
