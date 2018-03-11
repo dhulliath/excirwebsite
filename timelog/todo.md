@@ -6,7 +6,7 @@
 * logo and title in nav a la jazoo and ronin8.com
 * adjust team members page, try horizontal styling
 * fix front page picture
-* date on news post pages
++ date on news post pages
 
 * copy edit
 + 404 page

@@ -1,25 +1,52 @@
+$team-image-size: 175px;
+
 .teamMember {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+    clear: both;
+    display: flex;
+
+    @include viewTablet() {
+        display: block;
+        .aside {
+            float: left;
+            margin: 0.25em;
+        }
+        .aside, .main {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .aside {
+        width: $team-image-size;
+    }
+    .main {
+        width: 100%;
+    }
 
     .name, .title {
         text-align: center;
     }
     .name {
         font-weight: bold;
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
     .title {
         font-weight: bold;
         text-decoration: underline;
     }
     .bio {
-
+        padding: 0.25em;
     }
     .image {
-        img {
-            max-height: 8em;
-        }
-        max-height: 8em;
-        float:left;
+        width: $team-image-size;
+        height: $team-image-size;
+        //float:left;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        //border-radius: #{$team-image-size / 2};
+        border-radius: 50%;
     }
 }

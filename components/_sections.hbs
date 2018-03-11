@@ -60,10 +60,14 @@
 
 {{#if team_member}}
 <div class="teamMember">
-    <div class="image"><img src="{{pics.image}}"></img></div>
+    <div class="aside">
+    <div class="image" style="background-image: url({{pics.image}})"></div>
+    </div>
+    <div class="main">
     <div class="name">{{bio.name}}</div>
     <div class="title">{{bio.title}}</div>
     <div class="bio">{{bio.biography}}</div>
+    </div>
 </div>
 {{/if}}
 
