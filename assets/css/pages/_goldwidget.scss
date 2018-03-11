@@ -1,28 +1,33 @@
-.goldwidget {
-    display: none;
-    
-    &:before {
-        content: 'Current price of Gold: CAD$';
-    }
-    &:after {
-        content: '/oz';
-    }
-}
-
 .goldWidget {
-    float:right;
+    @include viewDesktop() {
+        position: absolute;
+        left: 0;
+        top: #{$nav-item-height * 2};
+        
+        padding: 10px;
+    }
+    @include viewTablet() {
+        margin: auto;
+    }
+    margin-left:auto;
+    //display: block;
     color: $color-accent;
     margin: 2px;
     font-size: 0.8em;
-
+    min-width: 200px;
+    max-width: 400px;
     div {
-        display: block;
+        display: flex;
+        border-bottom: 1px dashed $color-accent;
         :nth-child(1) {
-            float: left;
+            justify-content: flex-start;
+            margin-right: auto;
+            border: none;
         }
         :nth-child(2) {
-            margin-left: 1em;
-            float: right;
+            margin-left: auto;
+            justify-content: flex-end;
+            border: none;
         }
     }
 }
