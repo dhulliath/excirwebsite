@@ -66,7 +66,7 @@
     <div class="main">
     <div class="name">{{bio.name}}</div>
     <div class="title">{{bio.title}}</div>
-    <div class="bio">{{bio.biography}}</div>
+    <div class="bio">{{{marked bio.biography}}}</div>
     </div>
 </div>
 {{/if}}
@@ -83,7 +83,7 @@
 {{#if news_link}}
     <div class="newsLink">
         <a href="{{url}}">{{headline}}</a>
-        <div class="summary">{{summary}}</div>
+        <div class="summary">{{{marked summary}}}</div>
         <div class="source">{{source}}</div>
         <div class="date">{{article_date}}</div>
     </div>

@@ -11,7 +11,7 @@ define(function () {
                     let results = JSON.parse(xhttp.responseText);
                     for (key in elements) {
                         //document.querySelector(elements[key]).innerHTML = '$'+results[key].CAD;
-                        container.appendChild(makeElement(elements[key], 'CA$'+results[key].CAD));
+                        container.appendChild(makeElement(elements[key], 'CA $'+parseFloat(Math.round(results[key].CAD * 100) / 100).toFixed(2)));
                     }
                     console.log(results);
                     //docElement.innerHTML = JSON.parse(xhttp.responseText)[0].CAD;
