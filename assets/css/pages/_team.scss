@@ -5,11 +5,10 @@ $team-image-size: 175px;
     clear: both;
     display: flex;
 
-    @include viewTablet() {
+    @include viewPhone() {
         display: block;
         .aside {
-            float: left;
-            margin: 0.25em;
+            margin: auto;
         }
         .aside, .main {
             display: block;
@@ -48,5 +47,6 @@ $team-image-size: 175px;
         background-size: cover;
         //border-radius: #{$team-image-size / 2};
         border-radius: 50%;
+        margin-top: 2em;
     }
 }

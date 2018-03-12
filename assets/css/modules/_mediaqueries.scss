@@ -22,6 +22,12 @@
     }
 }
 
+@mixin withinDesktop() {
+    @media screen and (max-width: #{$view-desktop-threshold + 1}) {
+        @content;
+    }
+}
+
 @mixin viewPrinter() {
     @media print {
         @content;

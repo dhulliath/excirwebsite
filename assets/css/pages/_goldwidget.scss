@@ -1,21 +1,18 @@
+$widget-width-min: 200px;
+
 .goldWidget {
-    @include viewDesktop() {
+    @media screen and (min-width: #{$view-tablet-threshold + ($widget-width-min * 2)}) {
         position: absolute;
         left: 0;
         top: #{$nav-item-height * 2};
-        
-        padding: 10px;
     }
-    @include viewTablet() {
-        margin: auto;
-    }
-    margin-left:auto;
-    //display: block;
+    margin: auto;
     color: $color-accent;
-    margin: 2px;
     font-size: 0.8em;
-    min-width: 200px;
+    min-width: $widget-width-min;
     max-width: 400px;
+    padding: 5px;
+
     div {
         display: flex;
         border-bottom: 1px dashed $color-accent;
