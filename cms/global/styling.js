@@ -46,6 +46,58 @@
 				]
 			}
 		},
+		font_styles: {
+			default: {
+				classes: []
+			},
+			anton: {
+				classes: [
+					'font-anton'
+				]
+			},
+			arimo: {
+				classes: [
+					'font-arimo'
+				]
+			},
+			libre_franklin: {
+				classes: [
+					'font-libre-franklin'
+				]
+			},
+			merriweather: {
+				classes: [
+					'font-merriweather'
+				]
+			},
+			montserrat: {
+				classes: [
+					'font-montserrat'
+				]
+			}
+		},
+		text_align: {
+			left: {
+				classes: [
+					'txt-left'
+				]
+			},
+			right: {
+				classes: [
+					'txt-right'
+				]
+			},
+			center: {
+				classes: [
+					'txt-center'
+				]
+			},
+			justify: {
+				classes: [
+					'txt-justify'
+				]
+			}
+		},
 		border_styles: {
 			none: {
 				classes: []
@@ -87,6 +139,9 @@
 			}
 		},
 		size_styles: {
+			default: {
+				classes: []
+			},
 			quarter: {
 				classes: [
 					'sz-quarter'

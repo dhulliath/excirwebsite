@@ -1,6 +1,6 @@
 .fl-left {
     float:left;
-    text-align: center;
+    //text-align: center;
     @include viewDesktop() {
         position: relative;
         left: -$view-overshoot;
@@ -10,7 +10,7 @@
 }
 .fl-right {
     float:right;
-    text-align: center;
+    //text-align: center;
     @include viewDesktop() {
         position: relative;
         right: -$view-overshoot;

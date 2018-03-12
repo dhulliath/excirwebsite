@@ -30,7 +30,7 @@ article {
 }
 
 header {
-    @extend .font-merriweather;
+    //@extend .font-merriweather;
     font-weight: bold;
     text-align: center;
     font-size: 2.25em;
@@ -39,7 +39,7 @@ header {
 
 .header {
     font-size: 2em;
-    @extend .font-merriweather;
+    //@extend .font-merriweather;
     color: $color-accent;
 }
 
@@ -47,14 +47,31 @@ footer {
     @extend .font-libre-franklin;
 }
 
+/*
 h1,
 h2,
 h3,
 h4,
 h5 {
     @extend .font-anton;
-}
+}*/
 
 .big-text {
     font-size: 1.25em !important;
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-justify {
+    text-align: justify;
 }

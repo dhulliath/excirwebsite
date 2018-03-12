@@ -1,7 +1,7 @@
 {
     contentmaker: {
         spacer: {
-            spacer: 2
+            spacer: '2em'
         }
     }
 }

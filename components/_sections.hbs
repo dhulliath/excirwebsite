@@ -1,12 +1,12 @@
 {{#each _content}} 
 {{#if markdown}}
-<div>
+<div class="{{>loadclasses}}">
     {{{marked text}}}
 </div>
 {{/if}} 
 
 {{#if header}}
-<div class="header{{#each style.position.classes}} {{this}}{{/each}}{{#each style.size.classes}} {{this}}{{/each}}{{#each style.border.classes}} {{this}}{{/each}}">
+<div class="header{{>loadclasses}}">
     {{{header}}}
 </div>
 {{/if}}
@@ -28,7 +28,7 @@
 {{/if}}
 
 {{#if image}}
-<img src="{{href}}" class="{{#each style.position.classes}} {{this}}{{/each}}{{#each style.size.classes}} {{this}}{{/each}}{{#each style.border.classes}} {{this}}{{/each}}"
+<img src="{{href}}" class="{{>loadclasses}}"
 /> 
 {{/if}} 
 
@@ -61,12 +61,12 @@
 {{#if team_member}}
 <div class="teamMember">
     <div class="aside">
-    <div class="image" style="background-image: url({{pics.image}})"></div>
+        <div class="image" style="background-image: url({{pics.image}})"></div>
     </div>
     <div class="main">
-    <div class="name">{{bio.name}}</div>
-    <div class="title">{{bio.title}}</div>
-    <div class="bio">{{{marked bio.biography}}}</div>
+        <div class="name">{{bio.name}}</div>
+        <div class="title">{{bio.title}}</div>
+        <div class="bio">{{{marked bio.biography}}}</div>
     </div>
 </div>
 {{/if}}

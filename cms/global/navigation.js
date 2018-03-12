@@ -34,13 +34,6 @@
 						weight: '1'
 					}
 				]
-			},
-			{
-				name: 'left',
-				$subgroup_templatitator: '@@global._navigation._templates.subgroup',
-				$subgroup_size: 6,
-				$subgroup_noframe: true,
-				subgroup: []
 			}
 		],
 		$navgroupitems_hidden: true,
@@ -53,9 +46,6 @@
 			},
 			main_company: {
 				name: 'main_company'
-			},
-			left: {
-				name: 'left'
 			}
 		}
 	},

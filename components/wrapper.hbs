@@ -30,22 +30,7 @@
     </div>
     <div class="menu">
         <div class="start">
-            {{#navlist 'left'}} {{#each this}} {{#if subgroup}}
-            <div class="item has-dropdown is-hoverable">
-                <a class="link" {{#if url}}href="{{url}}" {{/if}}>
-                    {{label}}
-                </a>
-                <div class="dropdown">
-                    {{#navlist subgroup}} {{#each this}}
-                    <a class="item" {{#if url}}href="{{url}}" {{/if}}>
-                        {{label}}
-                    </a> {{/each}} {{/navlist}}
-                </div>
-            </div>
-            {{else}}
-            <a class="item" {{#if url}}href="{{url}}" {{/if}}>
-                {{label}}
-            </a> {{/if}} {{/each}} {{/navlist}}
+
         </div>
         <div class="end">
             {{#navlist 'main'}} {{#each this}} {{#if subgroup}}
