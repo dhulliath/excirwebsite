@@ -40,13 +40,11 @@ $team-image-size: 175px;
     .image {
         width: $team-image-size;
         height: $team-image-size;
-        //float:left;
         background-position-x: 50%;
         background-position-y: 50%;
         background-repeat: no-repeat;
         background-size: cover;
-        //border-radius: #{$team-image-size / 2};
         border-radius: 50%;
-        margin-top: 2em;
+        margin-top: 2.25em;
     }
 }

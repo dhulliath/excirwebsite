@@ -38,12 +38,38 @@
 			$href_size: 4,
 			image: 'Image with Styling',
 			$href_type: 'image',
+			href: '/remote/direct_uploads/golden-clipart-gold-bar-7.png',
+			$style_size: 8,
+			style: {
+				position: '@@global.styling.position_styles.center',
+				size: '@@global.styling.size_styles.quarter',
+				border: '@@global.styling.border_styles.none'
+			}
+		},
+		{
+			$image_type: 'title',
+			$href_size: 4,
+			image: 'Image with Styling',
+			$href_type: 'image',
 			href: '/remote/direct_uploads/palladium-pd-catalyst-500x500.jpg',
 			$style_size: 8,
 			style: {
 				position: '@@global.styling.position_styles.center',
 				size: '@@global.styling.size_styles.quarter',
 				border: '@@global.styling.border_styles.rounded'
+			}
+		},
+		{
+			$image_type: 'title',
+			$href_size: 4,
+			image: 'Image with Styling',
+			$href_type: 'image',
+			href: '/remote/direct_uploads/1kg-pt-999.5-classico-fronte.png',
+			$style_size: 8,
+			style: {
+				position: '@@global.styling.position_styles.center',
+				size: '@@global.styling.size_styles.quarter',
+				border: '@@global.styling.border_styles.none'
 			}
 		}
 	],

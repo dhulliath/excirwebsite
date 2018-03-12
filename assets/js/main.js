@@ -24,25 +24,4 @@ require(['jquery'], function ($) {
 		})
 
 	})
-
-	$('nav a.icon').click(function () {
-		$('nav').toggleClass('responsive');
-	})
-	var stickyTop = $('nav').offset().top;
-	$(window).resize(function () {
-		$('nav').removeClass('sticky');
-		stickyTop = $('nav').offset().top;
-		$(window).scroll();
-	})
-	$(window).scroll(function () {
-		if ($(window).scrollTop() >= stickyTop) {
-			$('nav').addClass('sticky');
-		} else {
-			$('nav').removeClass('sticky');
-		}
-	})
-	/*$('nav .dropdown').click(function() {
-		$(this).toggleClass('show');
-	})*/
-	$(window).scroll();
 })

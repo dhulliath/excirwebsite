@@ -3,7 +3,7 @@ $widget-width-min: 200px;
 .goldWidget {
     @media screen and (min-width: #{$view-tablet-threshold + ($widget-width-min * 2)}) {
         position: absolute;
-        left: 0;
+        right: 0;
         top: #{$nav-item-height * 2};
     }
     margin: auto;
