@@ -6,7 +6,7 @@
 		},
 		nav: {
 			label: 'Tests',
-			location: '@@global._navigation.navgroupitems.main',
+			location: '@@global._navigation.navgroupitems.none',
 			weight: 1,
 			$label_size: 6,
 			$location_size: 6,
