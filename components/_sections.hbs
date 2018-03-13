@@ -71,17 +71,9 @@
 </div>
 {{/if}}
 
-{{#if big_link}}
-    <div class="biglink">
-        <a href="{{url}}">
-            {{#if image}}<img src="{{image}}">{{/if}}
-            <span>{{title}}</span>
-        </a>
-    </div>
-{{/if}}
-
 {{#if news_link}}
     <div class="newsLink">
+        {{#if image}}<img src="{{image}}">{{/if}}
         <a href="{{url}}" target="_blank">{{headline}}</a>
         <div class="summary">{{{marked summary}}}</div>
         <div class="source">{{source}}</div>

@@ -142,9 +142,19 @@
 			default: {
 				classes: []
 			},
+			fifth: {
+				classes: [
+					'sz-fifth'
+				]
+			},
 			quarter: {
 				classes: [
 					'sz-quarter'
+				]
+			},
+			third: {
+				classes: [
+					'sz-third'
 				]
 			},
 			half: {

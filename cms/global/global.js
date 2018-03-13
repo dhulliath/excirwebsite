@@ -32,7 +32,7 @@
 		title: 'Excir Works',
 		$image_hidden: true,
 		image: '@@global._hidden.logo_images.vector',
-		footer: 'Under Construction',
+		footer: '',
 		$footer_type: 'textarea'
 	},
 	$seo_expander: true,
@@ -48,28 +48,6 @@
 		facebook: {
 			app_id: ''
 		}
-	},
-	$footer_expander: true,
-	footer: {
-		_content: [
-			{
-				$markdown_type: 'title',
-				markdown: 'Text with Markdown Filter',
-				$text_type: 'textarea',
-				$text_size: 8,
-				$style_size: 4,
-				text: 'Bay 12 - 2712 - 37 Avenue NE\nCalgary, AB, CA\nT1Y 5L3',
-				style: {
-					font: '@@global.styling.font_styles.default',
-					align: '@@global.styling.text_align.center',
-					position: '@@global.styling.position_styles.none',
-					size: '@@global.styling.size_styles.default',
-					border: '@@global.styling.border_styles.none'
-				}
-			}
-		],
-		$_content_size: 12,
-		$_content_templatitator: '@@global.contentmaker'
 	},
 	$contact_expander: true,
 	contact: {

@@ -14,6 +14,18 @@
         padding-left: 3em;
     }
 
+    img {
+        @extend .fl-center;
+        max-width: $view-mobile-threshold;
+        border-radius: 3px;
+        background: white;
+        padding: 3px;
+    }
+/*
+    .summary, a {
+        clear: both;
+    }*/
+
     .summary {
         //border-bottom: 1px dashed white;
     }

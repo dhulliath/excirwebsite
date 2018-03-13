@@ -4,9 +4,9 @@
             $markdown_type: 'title',
             markdown: 'Text with Markdown Filter',
             $text_type: 'textarea',
-            $text_size: 8,
-            $style_size: 4,
             text: '',
+            $style_expander: true,
+			$style_size: 4,
             style: {
                 font: '@@global.styling.font_styles.default',
                 align: '@@global.styling.text_align.left',

@@ -1,21 +1,15 @@
 {
     contentmaker: {
-        biglink: {
-            $big_link_type: 'title',
-            big_link: 'Big Link',
-            title: '',
-            image: '',
-            $image_type: 'image',
-            url: ''
-        },
-        newslink: {
+        news_article_link: {
             $news_link_type: 'title',
-            news_link: 'News Link',
+            news_link: 'News Article Link',
             headline: '',
             url: '',
             source: '',
             summary: '',
             $summary_type: 'textarea',
+            image: '',
+            $image_type: 'image',
             article_date: '',
             $article_date_type: 'date'
         }

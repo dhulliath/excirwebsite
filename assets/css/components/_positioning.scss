@@ -22,7 +22,12 @@
     margin:auto;
     text-align: center;
 }
-
+.sz-fifth {
+    width: 20%;
+    @include viewPhone() {
+        width: 50%;
+    }
+}
 .sz-quarter {
     width: 25%;
     @include viewPhone() {
@@ -32,6 +37,12 @@
         &.fl-left, &.fl-right {
             width: calc(25% + #{$view-overshoot});
         }
+    }
+}
+.sz-third {
+    width: 33%;
+    @include viewPhone() {
+        width: 100%;
     }
 }
 .sz-half {

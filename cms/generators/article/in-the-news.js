@@ -25,6 +25,8 @@
 			source: 'Science Daily',
 			summary: 'A new financially viable and environmentally friendly way to recover and recycle gold from electronic waste has been outlined by scientists. With lower toxicity, cheaper cost and quicker extraction, the team has discovered an approach that could revolutionize the industry and be a veritable gold mine, so to speak.',
 			$summary_type: 'textarea',
+			image: '/remote/direct_uploads/1520962522_News1.png',
+			$image_type: 'image',
 			article_date: 'Thursday, 28 January, 2016',
 			$article_date_type: 'date',
 			$article_date_value: '2016-01-28'
@@ -37,6 +39,8 @@
 			source: 'AZo Cleantech',
 			summary: 'Stephen Foley, an associate professor in the Department of Chemistry at the University of Saskatchewan (U of S), and his team appear to possess the Midas touch when it comes to research on the extraction of gold.',
 			$summary_type: 'textarea',
+			image: '/remote/direct_uploads/1520962527_logo2.png',
+			$image_type: 'image',
 			article_date: 'Friday, 29 January, 2016',
 			$article_date_type: 'date',
 			$article_date_value: '2016-01-29'
@@ -49,6 +53,8 @@
 			source: 'Phys.Org',
 			summary: 'Stephen Foley is looking to get his hands on some gold… the problem is that it takes too much time, costs too much money and harms the environment.\n\nThe work of his research team—made up of Loghman Moradi, research associate, and Hiwa Salimi, PhD student— changes all of that.\n"We\'ve found a simple, cheap and environmentally benign solution that extracts gold in seconds, and can be recycled and reused," said Foley, an associate professor in the Department of Chemistry. "This could change the gold industry."',
 			$summary_type: 'textarea',
+			image: '/remote/direct_uploads/1520962532_logo3.jpg',
+			$image_type: 'image',
 			article_date: 'Wednesday, 03 February, 2016',
 			$article_date_type: 'date',
 			$article_date_value: '2016-02-03'
@@ -61,6 +67,8 @@
 			source: 'Canadian Mining and Energy',
 			summary: 'Stephen Foley, a professor with a PhD in organic chemistry at the University of Saskatchewan, and his team, Hiwa Salimi and Loghman Moradi, first took a look at how the mining industry extracts gold three years ago. Their findings were surprising: “We looked at precious metals and gold in particular and were surprised to see that the core process in the mining industry—where they use cyanide to extract gold—hadn’t changed in 125 years,” Foley said. “Being from the University of Saskatchewan, and the province heavily involved in mining, we started to look at where we could make a contribution.”',
 			$summary_type: 'textarea',
+			image: '/remote/direct_uploads/1520962537_logo4.svg',
+			$image_type: 'image',
 			article_date: '',
 			$article_date_type: 'date'
 		},
@@ -72,6 +80,8 @@
 			source: 'CBC News',
 			summary: 'Chemist Stephen Foley says they’ve found a way to get the gold from old electronics easily. The world produces almost 50M tonnes of e-waste each year.',
 			$summary_type: 'textarea',
+			image: '/remote/direct_uploads/1520962554_logo5.png',
+			$image_type: 'image',
 			article_date: 'Friday, 29 January, 2016',
 			$article_date_type: 'date',
 			$article_date_value: '2016-01-29'
@@ -84,6 +94,8 @@
 			source: 'SABEX',
 			summary: 'Four University of Saskatchewan (U of S) researchers were honoured with the 2017 Award of Innovation at the 2017 SABEX Awards on Feb. 9 at Prairieland Park for innovations that will improve human health and the environment.',
 			$summary_type: 'textarea',
+			image: '/remote/direct_uploads/1520962560_logo6.png',
+			$image_type: 'image',
 			article_date: 'Wednesday, 10 February, 2016',
 			$article_date_type: 'date',
 			$article_date_value: '2016-02-10'

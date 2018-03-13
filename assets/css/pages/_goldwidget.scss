@@ -13,6 +13,10 @@ $widget-width-min: 200px;
     max-width: 400px;
     padding: 5px;
 
+    &:empty {
+        display: none;
+    }
+
     div {
         display: flex;
         border-bottom: 1px dashed $color-accent;
