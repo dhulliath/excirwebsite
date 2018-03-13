@@ -74,10 +74,11 @@
 {{#if news_link}}
     <div class="newsLink">
         <a href="{{url}}" target="_blank">{{headline}}</a>
-        {{#if image}}<img src="{{image}}">{{/if}}
         <div class="summary">{{{marked summary}}}</div>
-        <div class="source">{{source}}</div>
-        <div class="date">{{article_date}}</div>
+        <div class="meta">
+            {{#if image}}<img src="{{image}}">{{/if}}
+            <div class="date">{{article_date}}</div>
+        </div>
     </div>
 {{/if}}
 

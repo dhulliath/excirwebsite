@@ -10,12 +10,14 @@
     }
 
     .source, .date {
+        //@extend .fl-left;
         font-size: 0.8em;
-        padding-left: 3em;
+        
     }
-
+    .meta {
+        //padding-left: 3em;
+    }
     img {
-        @extend .fl-left;
         max-width: 10em;
         border-radius: 3px;
         background: white;

@@ -57,6 +57,9 @@
 					border: '@@global.styling.border_styles.none'
 				}
 			}
+		},
+		{
+			spacer: '6em'
 		}
 	],
 	$_content_size: 12,
