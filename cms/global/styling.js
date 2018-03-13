@@ -98,6 +98,26 @@
 				]
 			}
 		},
+		text_size: {
+			default: {
+				classes: []
+			},
+			'1.5_em': {
+				classes: [
+					'txt-sz-1-5em'
+				]
+			},
+			'2_em': {
+				classes: [
+					'txt-sz-2em'
+				]
+			},
+			'2.5_em': {
+				classes: [
+					'txt-sz-2-5em'
+				]
+			}
+		},
 		border_styles: {
 			none: {
 				classes: []
@@ -119,6 +139,9 @@
 			}
 		},
 		position_styles: {
+			default: {
+				classes: []
+			},
 			float_left: {
 				classes: [
 					'fl-left'

@@ -15,8 +15,8 @@
     }
 
     img {
-        @extend .fl-center;
-        max-width: $view-mobile-threshold;
+        @extend .fl-left;
+        max-width: 10em;
         border-radius: 3px;
         background: white;
         padding: 3px;

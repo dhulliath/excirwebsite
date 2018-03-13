@@ -16,6 +16,12 @@
     }
 }
 
+@mixin beyondPhone() {
+    @media screen and (min-width: #{$view-mobile-threshold + 1}) {
+        @content;
+    }
+}
+
 @mixin viewDesktop() {
     @media screen and (min-width: $view-desktop-threshold) {
         @content;

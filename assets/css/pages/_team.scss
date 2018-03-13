@@ -16,8 +16,15 @@ $team-image-size: 175px;
         }
     }
 
+    @include beyondPhone() {
+        .aside {
+            margin-right: 1em;
+        }
+    }
+
     .aside {
         width: $team-image-size;
+        //margin-right: 1em;
     }
     .main {
         width: 100%;

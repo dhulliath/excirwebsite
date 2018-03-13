@@ -2,15 +2,19 @@
     contentmaker: {
         image: {
             $image_type: 'title',
-            $href_size: 4,
             image: 'Image with Styling',
             $href_type: 'image',
             href: '',
-            $style_size: 8,
+            $style_expander: true,
+            $style_size: 12,
             style: {
-                position: '@@global.styling.position_styles.none',
-                size: '@@global.styling.size_styles.quarter',
-                border: '@@global.styling.border_styles.none'
+                $position_noframe: true,
+                $position_size: 4,
+                position: {
+                    position: '@@global.styling.position_styles.default',
+                    size: '@@global.styling.size_styles.fluid',
+                    border: '@@global.styling.border_styles.none'
+                }
             }
         }
     }

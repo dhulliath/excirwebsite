@@ -20,14 +20,22 @@
 	$_page_expander: false,
 	_content: [
 		{
-			$header_size: 8,
 			$header_type: 'textarea',
 			header: 'THE MOST EFFECTIVE AND ENVIRONMENTALLY-FRIENDLY METHOD FOR RECYCLING AND REFINING OF GOLD, PALLADIUM AND PLATINUM',
-			$style_size: 4,
+			$style_expander: true,
 			style: {
-				position: '@@global.styling.position_styles.center',
-				size: '@@global.styling.size_styles.fluid',
-				border: '@@global.styling.border_styles.none'
+				$text_size: 4,
+				$position_size: 4,
+				text: {
+					font: '@@global.styling.font_styles.default',
+					align: '@@global.styling.text_align.left',
+					text_size: '@@global.styling.text_size.1_5_em'
+				},
+				position: {
+					position: '@@global.styling.position_styles.center',
+					size: '@@global.styling.size_styles.fluid',
+					border: '@@global.styling.border_styles.none'
+				}
 			}
 		},
 		{
@@ -35,15 +43,19 @@
 		},
 		{
 			$image_type: 'title',
-			$href_size: 4,
 			image: 'Image with Styling',
 			$href_type: 'image',
 			href: '/remote/direct_uploads/1519854788_Picture2.png',
-			$style_size: 8,
+			$style_expander: true,
+			$style_size: 12,
 			style: {
-				position: '@@global.styling.position_styles.center',
-				size: '@@global.styling.size_styles.fluid',
-				border: '@@global.styling.border_styles.none'
+				$position_noframe: true,
+				$position_size: 4,
+				position: {
+					position: '@@global.styling.position_styles.center',
+					size: '@@global.styling.size_styles.fluid',
+					border: '@@global.styling.border_styles.none'
+				}
 			}
 		}
 	],

@@ -47,15 +47,6 @@ footer {
     @extend .font-libre-franklin;
 }
 
-/*
-h1,
-h2,
-h3,
-h4,
-h5 {
-    @extend .font-anton;
-}*/
-
 .big-text {
     font-size: 1.25em !important;
 }
@@ -74,4 +65,14 @@ h5 {
 
 .txt-justify {
     text-align: justify;
+}
+
+.txt-sz-2-5em {
+    font-size: 2.5em;
+}
+.txt-sz-2em {
+    font-size: 2em;
+}
+.txt-sz-1-5em {
+    font-size: 1.5em;
 }

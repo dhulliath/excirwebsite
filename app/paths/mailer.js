@@ -12,9 +12,7 @@ var recaptcha = new reCAPTCHA({
 
 local_app.prototype.init = function (app) {
 	var transporter = nodemailer.createTransport({
-		host: process.env.emailSMTPServer,
-		port: parseInt(process.env.emailPort),
-		secure: process.env.emailSecure || false,
+		service: 'gmail',
 		auth: {
 			user: process.env.emailUsername,
 			pass: process.env.emailPassword
@@ -45,7 +43,7 @@ local_app.prototype.init = function (app) {
 
 			if (!code.honeypot && !code.error) {
 				let mailOptions = {
-					from: '<' + process.env.emailUsername + '>',
+					from: '"' + [req.body.name, req.body.company].join(' @ ') + '" <' + process.env.emailUsername + '>',
 					replyTo: '"' + req.body.name + '" <' + req.body.replyEmail + '>',
 					to: '<' + getEmailDestination(req.body.formSubject) + '>',
 					subject: req.body.formSubject + ': ' + req.body.company,
