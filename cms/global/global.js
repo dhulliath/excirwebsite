@@ -69,11 +69,11 @@
 			email: [
 				{
 					subject: 'General Inquiry',
-					email_destination: 'info@excirworks.com'
+					email_destination: 'excir.it@gmail.com'
 				},
 				{
 					subject: 'Investor Relation',
-					email_destination: 'info@excirworks.com'
+					email_destination: 'excir.it@gmail.com'
 				}
 			]
 		}

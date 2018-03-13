@@ -14,7 +14,7 @@ local_app.prototype.init = function (app) {
 	var transporter = nodemailer.createTransport({
 		host: process.env.emailSMTPServer,
 		port: parseInt(process.env.emailPort),
-		secure: false,
+		secure: process.env.emailSecure || false,
 		auth: {
 			user: process.env.emailUsername,
 			pass: process.env.emailPassword
