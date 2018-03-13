@@ -29,7 +29,7 @@
 				text: {
 					font: '@@global.styling.font_styles.default',
 					align: '@@global.styling.text_align.left',
-					text_size: '@@global.styling.text_size.1_5_em'
+					text_size: '@@global.styling.text_size.1-5_em'
 				},
 				position: {
 					position: '@@global.styling.position_styles.center',

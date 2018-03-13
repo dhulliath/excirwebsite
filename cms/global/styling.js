@@ -102,7 +102,7 @@
 			default: {
 				classes: []
 			},
-			'1.5_em': {
+			'1-5_em': {
 				classes: [
 					'txt-sz-1-5em'
 				]
@@ -112,7 +112,7 @@
 					'txt-sz-2em'
 				]
 			},
-			'2.5_em': {
+			'2-5_em': {
 				classes: [
 					'txt-sz-2-5em'
 				]
