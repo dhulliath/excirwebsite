@@ -57,45 +57,56 @@
 22 February
 1130 - start
 1515 - stopbreak
-3 hours 45 minutes
 2045 - start
 2400 - stop
-3 hour 15 minutes
+---
+7 hours
 
 23 February
 1030 - start
 1130 - stop
-1 hour
 1730 - start
 1830 - stop
-1 hour
 1930 - start
 2230 - stop
-3 hours
+---
+5 hours
 
 26 February
 1300 - start
 1500 - stop
+---
 2 hours
 
 28 February
 1400 - start live editing
 1530 - stop 
+---
 1 hour 30 minutes
 
 4 March
 1100 - start
 1300 - stop
+---
 2 hours
 
 7 March 
 1400 - start
 1600 - stop
+---
 2 hours
 
 13 March
 1100 - start
+1400 - stop
+---
+3 hours
 
+15 March
+1200 - start
+1300 - stop
+---
+1 hour
 
 ===
-45 hours 30 minutes
+48 hours 30 minutes
