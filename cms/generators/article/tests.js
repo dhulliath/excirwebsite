@@ -5,7 +5,7 @@
 			theme: '@@global.styling.page_styles.standard'
 		},
 		nav: {
-			label: 'Tests',
+			label: 'Test GIT',
 			location: '@@global._navigation.navgroupitems.none',
 			weight: 1,
 			$label_size: 6,
